@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/portfolio/static/js/main.97841b8e.js",
-    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/portfolio/static/css/main.3e2f5d1c.css",
+    "main.js": "/portfolio/static/js/main.48087a6e.js",
+    "static/media/lca.png": "/portfolio/static/media/lca.f84e1a7fedab1c177557.png",
+    "static/media/space2.jpg": "/portfolio/static/media/space2.e54e41def48b9426cbad.jpg",
+    "static/media/reservia.png": "/portfolio/static/media/reservia.c259abd629682fe5bb4f.png",
+    "static/media/omf.png": "/portfolio/static/media/omf.19b24038a59261fdeb1b.png",
+    "static/media/gif-header.gif": "/portfolio/static/media/gif-header.3618a959ff1124749797.gif",
+    "static/media/cv-alternance.pdf": "/portfolio/static/media/cv-alternance.e2f0322acb92e12b9bb6.pdf",
+    "static/media/player.png": "/portfolio/static/media/player.a2f6f3e36d2d3bc9d4ff.png",
+    "static/media/meteors.png": "/portfolio/static/media/meteors.9edd22c51c1238f1dcf7.png",
     "index.html": "/portfolio/index.html",
-    "main.073c9b0a.css.map": "/portfolio/static/css/main.073c9b0a.css.map",
-    "main.97841b8e.js.map": "/portfolio/static/js/main.97841b8e.js.map",
-    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "static/media/menu.svg": "/portfolio/static/media/menu.27df51a0dfd075e2ddf3.svg",
+    "main.3e2f5d1c.css.map": "/portfolio/static/css/main.3e2f5d1c.css.map",
+    "main.48087a6e.js.map": "/portfolio/static/js/main.48087a6e.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.97841b8e.js"
+    "static/css/main.3e2f5d1c.css",
+    "static/js/main.48087a6e.js"
   ]
 }
