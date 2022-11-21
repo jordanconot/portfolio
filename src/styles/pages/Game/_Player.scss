@@ -1,0 +1,19 @@
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .over{
+        font-size: 2rem;
+        color: white;
+    }
+
+    .score{
+        color: white;
+    }
+
+    .btn-game{
+        background-color: white;
+        border-radius: 50%;
+    }
+}
