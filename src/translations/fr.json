@@ -10,12 +10,56 @@
         "h1": {
             "before": "Jordan est",
             "strong": "web designer",
-            "after": "et",
+            "after": "&",
             "highlight-strong": "front-end développeur"
-            }, 
+        },
         "h2": "Il crée des sites web réactifs où la technologie rencontre la créativité",
         "btn-contact": "Contactez-moi !",
         "texte-img": "Travaille actuellement sur le",
-        "texte-img-strong":"Portfolio"
+        "texte-img-strong": "Portfolio"
+    },
+    "Main": {
+        "h2": "Projets",
+        "span": "Voir plus",
+        "card": {
+            "language": "React Recharts js scss",
+            "title": "Sport see",
+            "description": "Application sportive",
+            "btn-live": "Voir",
+            "btn-github": "Github"
+        },
+        "skills": {
+            "skills": "Compétences",
+            "title-languages": "Langages",
+            "languages": "JavaScript",
+            "title-frameworks": "Frameworks",
+            "frameworks": "ReactJs NextJs ExpressJs NodeJs",
+            "title-databases": "Base de données",
+            "databases": "MongoDb",
+            "title-others": "Autres",
+            "others": "Html Css Scss Tailwind MUI Redux",
+            "title-tools": "Outils",
+            "tools": "Git Figma VsCode"
+        },
+        "about": {
+            "about": "À propos",
+            "text-welcome": "Bonjour, je suis Jordan !",
+            "text": "Je suis un développeur front-end, j'habite à Montpellier. Je peux développer des sites web réactifs à partir de zéro et les transformer en expériences web modernes et conviviales. Transformer ma créativité et mes connaissances en sites web est ma passion depuis plus d'un an. Je m'efforce toujours d'apprendre les dernières technologies et frameworks.",
+            "more": "Curieux(se) ?"
+        },
+        "contact": {
+            "contact": "Contact",
+            "text-contact": "Je suis intéressée par des opportunités de travail en freelance. Cependant, si vous avez d'autres demandes ou questions, n'hésitez pas à me contacter.",
+            "message": "Envoyez-moi un message",
+            "email": "jordan10967@gmail.com",
+            "linkedin": "@jordanconot"
+        }
+    },
+    "Footer": {
+        "name": "Jordan",
+        "text-top": "Web designer & front-end développeur",
+        "media": "Média",
+        "credit": "Design Credit ~ Jordan from Figma community",
+        "copyright": "© Copyright 2024. Website by Jordan"
     }
 }

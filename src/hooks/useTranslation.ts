@@ -6,7 +6,6 @@ const useTranslation = (currentLang: string) => {
   useEffect(() => {
     import(`../translations/${currentLang}.json`)
       .then((module) => {
-        console.log("Traductions chargées :", module.default);
         setTranslations(module.default);
       });
   }, [currentLang]);

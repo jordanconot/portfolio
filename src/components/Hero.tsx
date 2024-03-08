@@ -22,10 +22,10 @@ const Banner = () => {
             <>
                 <div className='flex flex-col mt-4'>
                     <Image src='/assets/img/boy.png' alt='Boy' width={350} height={261} />
-                    <div className='w-full p-2 h-auto border-color-2 border-2 flex items-center gap-4'>
+                    <div className='w-full p-2 h-auto border-color-2 border flex items-center gap-4'>
                         <Image src='/assets/svg/icon-rectangle.svg' alt='Rectangle' width={16} height={16} />
                         <p className='text-base text-color-2'>{t('Banner.texte-img')}
-                        <span className='text-color-3'> {t('Banner.texte-img-strong')}</span>
+                            <span className='text-color-3'> {t('Banner.texte-img-strong')}</span>
                         </p>
                     </div>
                 </div>

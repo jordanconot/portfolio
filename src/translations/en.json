@@ -10,12 +10,56 @@
         "h1": {
             "before": "Jordan is a",
             "strong": "web designer",
-            "after": "and",
+            "after": "&",
             "highlight-strong": "front-end developer"
-            },
+        },
         "h2": "He creates responsive websites where technology meets creativity",
         "btn-contact": "Contact me!",
         "texte-img": "Currently working on the Portfolio",
-        "texte-img-strong":"Portfolio"
+        "texte-img-strong": "Portfolio"
+    },
+    "Main": {
+        "h2": "Projects",
+        "span": "View all",
+        "card": {
+            "language": "React Recharts js scss",
+            "title": "Sport see",
+            "description": "Sports application",
+            "btn-live": "Visit",
+            "btn-github": "Github"
+        },
+        "skills": {
+            "skills": "Skills",
+            "title-languages": "Languages",
+            "languages": "JavaScript",
+            "title-frameworks": "Frameworks",
+            "frameworks": "ReactJs NextJs ExpressJs NodeJs",
+            "title-databases": "DataBases",
+            "databases": "MongoDb",
+            "title-others": "Others",
+            "others": "Html Css Scss Tailwind MUI Redux",
+            "title-tools": "Tools",
+            "tools": "Git Figma VsCode"
+        },
+        "about": {
+            "about": "About",
+            "text-welcome": "Hi, I'm Jordan !",
+            "text": "I'm a front-end developer living in Montpellier. I can develop responsive websites from scratch and turn them into modern, user-friendly web experiences. Turning my creativity and knowledge into websites has been my passion for over a year. I always strive to learn the latest technologies and frameworks.",
+            "more": "Curious ?"
+        },
+        "contact": {
+            "contact": "Contact",
+            "text-contact": "I am interested in freelance opportunities. However, if you have any other requests or questions, please don't hesitate to contact me.",
+            "message": "Message me here",
+            "email": "jordan10967@gmail.com",
+            "linkedin": "@jordanconot"
+        }
+    },
+    "Footer": {
+        "name": "Jordan",
+        "text-top": "Web designer & front-end developer",
+        "media": "Media",
+        "credit": "Design Credit ~ Jordan from Figma community",
+        "copyright": "© Copyright 2024. Website by Jordan"
     }
 }
