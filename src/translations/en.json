@@ -8,12 +8,12 @@
     },
     "Banner": {
         "h1": {
-            "before": "Jordan is a",
+            "before": "Im a",
             "strong": "web designer",
             "after": "&",
             "highlight-strong": "front-end developer"
         },
-        "h2": "He creates responsive websites where technology meets creativity",
+        "h2": "I creates responsive websites where technology meets creativity",
         "btn-contact": "Contact me!",
         "texte-img": "Currently working on the Portfolio",
         "texte-img-strong": "Portfolio"

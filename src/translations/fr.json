@@ -8,12 +8,12 @@
     },
     "Banner": {
         "h1": {
-            "before": "Jordan est",
+            "before": "Je suis",
             "strong": "web designer",
             "after": "&",
             "highlight-strong": "front-end développeur"
         },
-        "h2": "Il crée des sites web réactifs où la technologie rencontre la créativité",
+        "h2": "Je crée des sites web réactifs où la technologie rencontre la créativité",
         "btn-contact": "Contactez-moi !",
         "texte-img": "Travaille actuellement sur le",
         "texte-img-strong": "Portfolio"
