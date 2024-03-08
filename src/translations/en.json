@@ -1,0 +1,21 @@
+{
+    "Nav": {
+        "name": "Jordan",
+        "home": "Home",
+        "projects": "Projects",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "Banner": {
+        "h1": {
+            "before": "Jordan is a",
+            "strong": "web designer",
+            "after": "and",
+            "highlight-strong": "front-end developer"
+            },
+        "h2": "He creates responsive websites where technology meets creativity",
+        "btn-contact": "Contact me!",
+        "texte-img": "Currently working on the Portfolio",
+        "texte-img-strong":"Portfolio"
+    }
+}
