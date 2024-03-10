@@ -9,7 +9,7 @@ const page = () => {
         <div className='m-4'>
             <NavBar />
             <main className='mt-8'>
-                <Contact />
+                <Contact isContactPage={true}/>
             </main>
         </div>
         <Footer />

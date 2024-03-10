@@ -14,3 +14,38 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.underline-effect::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  border: 2px solid transparent;
+  border-top-color: #fff;
+  border-radius: 70%;
+}
+
+/* Scrollbar */
+
+/*l'ensemble de la scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* le fond de la scrollbar */
+::-webkit-scrollbar-track {
+  background: #ABB2BF;
+}
+
+/*le bouton de défilement */
+::-webkit-scrollbar-thumb {
+  background: #0047C3;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FFF;
+  /* Couleur du thumb au survol */
+}

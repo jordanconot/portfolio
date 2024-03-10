@@ -6,14 +6,14 @@ import React from 'react';
 const page = () => {
     return (
         <>
-        <div className='m-4'>
-            <NavBar />
-            <main className='mt-8'>
-                <Projects />
-            </main>
-        </div>
-        <Footer />
-    </>
+            <div className='m-4'>
+                <NavBar />
+                <main className='mt-8'>
+                    <Projects isProjectsPage={true} />
+                </main>
+            </div>
+            <Footer />
+        </>
     );
 };
 

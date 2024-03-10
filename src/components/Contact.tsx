@@ -4,18 +4,28 @@ import { LanguageContext } from '@/app/layout';
 import useTranslation from '@/hooks/useTranslation';
 import Image from 'next/image';
 
-const Contact = () => {
+interface ContactProps {
+    isContactPage: boolean
+}
+
+const Contact: React.FC<ContactProps> = ({ isContactPage }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
     return (
         <section className='flex flex-col gap-6 mt-8'>
-            <div className='flex items-center justify-between'>
-                <h2 className='text-color-3 text-3xl'><span className='text-color-1 text-3xl'>#</span>{t('Main.contact.contact')}</h2>
+            <div className='flex items-center'>
+                <h2 className='text-color-3 text-3xl font-medium'>
+                    <span className='text-color-1 text-3xl'>{isContactPage ? '/' : '#'}</span>{t('Main.contact.contact')}</h2>
+                    <div className='h-[1px] w-[200px] bg-backgroundColor-nav ml-6 hidden lg:block'></div>
             </div>
-            <div className='flex flex-col gap-4'>
+            <div className='lg:flex lg:flex-row lg:flex-wrap lg:justify-between'>
+            <div className='flex flex-col gap-4 lg:max-w-[50%]'>
                     <p className='text-color-2'>{t('Main.contact.text-contact')}</p>
+                    {isContactPage && (
+                        <p className='text-color-2'>{t('Main.contact.text-contact-after')}</p>
+                    )}
                 </div>
-                <div className='border-color-2 border'>
+                <div className='border-color-2 border flex w-full md: max-w-max'>
                     <div className='p-4 flex flex-col gap-4'>
                         <p className='text-color-3'>{t('Main.contact.message')}</p>
                         <div className='flex items-center gap-2'>
@@ -27,6 +37,7 @@ const Contact = () => {
                             <p className='text-color-2'>{t('Main.contact.linkedin')}</p>
                         </div>
                     </div>
+                </div>
                 </div>
         </section>
     );

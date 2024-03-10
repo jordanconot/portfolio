@@ -16,7 +16,9 @@
         "h2": "Je crée des sites web réactifs où la technologie rencontre la créativité",
         "btn-contact": "Contactez-moi !",
         "texte-img": "Travaille actuellement sur le",
-        "texte-img-strong": "Portfolio"
+        "texte-img-strong": "Portfolio",
+        "citation": "Une grande puissance s'accompagne d'une grande facture d'électricité",
+        "author": "- Dr Who"
     },
     "Main": {
         "h2": "Projets",
@@ -31,28 +33,31 @@
         "skills": {
             "skills": "Compétences",
             "title-languages": "Langages",
-            "languages": "JavaScript",
+            "languages": "JavaScript, TypeScript",
             "title-frameworks": "Frameworks",
-            "frameworks": "ReactJs NextJs ExpressJs NodeJs",
+            "frameworks": "ReactJs, NextJs, ExpressJs, NodeJs",
             "title-databases": "Base de données",
             "databases": "MongoDb",
             "title-others": "Autres",
-            "others": "Html Css Scss Tailwind MUI Redux",
+            "others": "Html, Css, Scss, Tailwind, MUI, Redux",
             "title-tools": "Outils",
-            "tools": "Git Figma VsCode"
+            "tools": "Git, Figma, VsCode"
         },
         "about": {
             "about": "À propos",
             "text-welcome": "Bonjour, je suis Jordan !",
-            "text": "Je suis un développeur front-end, j'habite à Montpellier. Je peux développer des sites web réactifs à partir de zéro et les transformer en expériences web modernes et conviviales. Transformer ma créativité et mes connaissances en sites web est ma passion depuis plus d'un an. Je m'efforce toujours d'apprendre les dernières technologies et frameworks.",
+            "text": "Je suis un développeur front-end, j'habite à Montpellier. Je peux développer des sites web réactifs à partir de zéro et les transformer en expériences web modernes et conviviales.",
+            "text-after": "Transformer ma créativité et mes connaissances en sites web est ma passion depuis plus d'un an. Je m'efforce toujours d'apprendre les dernières technologies et frameworks.",
             "more": "Curieux(se) ?"
         },
         "contact": {
             "contact": "Contact",
-            "text-contact": "Je suis intéressée par des opportunités de travail en freelance. Cependant, si vous avez d'autres demandes ou questions, n'hésitez pas à me contacter.",
+            "text-contact": "N'hésitez pas à me contacter pour discuter de projets, d'idées, ou pour toute demande de renseignements. Je suis passionné par le monde du développement web et ouvert à toutes opportunités de collaborations ou de missions en freelance.",
+            "text-contact-after": "Vos retours et commentaires sont précieux pour moi ; ils contribuent à l'amélioration de mes compétences et à la qualité de mes réalisations. Si vous cherchez un développeur web dynamique, créatif et engagé pour enrichir votre équipe ou pour un projet spécifique, je serais ravi d'en discuter avec vous. Ensemble, nous pouvons développer des solutions numériques innovantes qui feront la différence.",
             "message": "Envoyez-moi un message",
-            "email": "jordan10967@gmail.com",
-            "linkedin": "@jordanconot"
+            "email": "jordan.conot.dev@gmail.com",
+            "linkedin": "@jordanconot",
+            "contact-me": "Contactez-moi !"
         }
     },
     "Footer": {
@@ -60,6 +65,35 @@
         "text-top": "Web designer & front-end développeur",
         "media": "Média",
         "credit": "Design Credit ~ Jordan from Figma community",
-        "copyright": "© Copyright 2024. Website by Jordan"
+        "copyright": "© Copyright 2024. Website by Jordan.C"
+    },
+    "Page-projects": {
+        "my-projects": "Liste de mes projets",
+        "complets-apps": "Apps complètes",
+        "small-projects": "Petits Projets"
+    },
+    "Page-about": {
+        "text": "Mon expertise couvre à la fois le développement front-end et back-end, ce qui me permet d'architecturer et de créer des applications robustes et user-friendly du début à la fin. Ma maîtrise de langages tels que HTML, CSS, JavaScript, et d'une gamme de frameworks JavaScript tels que ReactJs, NextJs, Node, Express me permet de donner vie à des idées tout en garantissant la fonctionnalité, la sécurité et l'évolutivité.",
+        "soft-skills": "Mes soft-skills",
+        "communication": "Communication",
+        "communication-text": "Transmission efficace des idées, écoute, dialogue constructif.",
+        "adaptability": "Adaptabilité",
+        "adaptability-text": "Ajustement rapide aux technologies et exigences changeantes.",
+        "problem-solving": "Résolution de problèmes",
+        "problem-solving-text": "Identification et résout efficacement les défis techniques.",
+        "time-management": "Travail en équipe",
+        "time-management-text": "Planification et respect des délais, travail organisé.",
+        "creativity": "Créativité.",
+        "creativity-text": "Innovation dans la conception et l'approche de développement.",
+        "teamwork": "Travail d'équipe",
+        "teamwork-text": "Collaboratif, contribue activement à l'équipe",
+        "self-reliance":"Autonomie",
+        "self-reliance-text":"Capable de travailler seul, prend des initiatives.",
+        "attention-to-detail": "Attention aux détails",
+        "attention-to-detail-text": "Minutie dans la programmation, souci de la qualité.",
+        "continuous-learning": "Apprentissage continu",
+        "continuous-learning-text": "Formation constante sur les nouvelles technologies.",
+        "stress-management": "Gestion du stress",
+        "stress-management-text": "Reste calme et productif sous pression."
     }
 }

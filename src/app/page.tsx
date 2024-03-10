@@ -10,14 +10,14 @@ import Skills from '@/components/Skills';
 const page = () => {
     return (
         <>
-            <div className='m-4'>
+            <div className='m-4 md:mr-32 md:ml-32'>
                 <NavBar />
                 <Hero />
                 <main className='mt-8'>
-                    <Projects />
-                    <Skills />
-                    <About />
-                    <Contact />
+                    <Projects isProjectsPage={false} />
+                    <Skills isHomePage={true} isAboutPage={false}/>
+                    <About isAboutPage={false}/>
+                    <Contact isContactPage={false}/>
                 </main>
             </div>
             <Footer />

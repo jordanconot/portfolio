@@ -16,7 +16,9 @@
         "h2": "I creates responsive websites where technology meets creativity",
         "btn-contact": "Contact me!",
         "texte-img": "Currently working on the Portfolio",
-        "texte-img-strong": "Portfolio"
+        "texte-img-strong": "Portfolio",
+        "citation": "Great power comes with a great electricity bill.",
+        "author": "- Dr Who"
     },
     "Main": {
         "h2": "Projects",
@@ -31,7 +33,7 @@
         "skills": {
             "skills": "Skills",
             "title-languages": "Languages",
-            "languages": "JavaScript",
+            "languages": "JavaScript, TypeScript",
             "title-frameworks": "Frameworks",
             "frameworks": "ReactJs NextJs ExpressJs NodeJs",
             "title-databases": "DataBases",
@@ -44,15 +46,18 @@
         "about": {
             "about": "About",
             "text-welcome": "Hi, I'm Jordan !",
-            "text": "I'm a front-end developer living in Montpellier. I can develop responsive websites from scratch and turn them into modern, user-friendly web experiences. Turning my creativity and knowledge into websites has been my passion for over a year. I always strive to learn the latest technologies and frameworks.",
+            "text": "I'm a front-end developer living in Montpellier. I can develop responsive websites from scratch and turn them into modern, user-friendly web experiences.",
+            "text-after": "Turning my creativity and knowledge into websites has been my passion for over a year. I always strive to learn the latest technologies and frameworks.",
             "more": "Curious ?"
         },
         "contact": {
             "contact": "Contact",
-            "text-contact": "I am interested in freelance opportunities. However, if you have any other requests or questions, please don't hesitate to contact me.",
+            "text-contact": "Please don't hesitate to contact me to discuss projects or ideas, or for any other enquiries. I'm passionate about the world of web development and open to all opportunities for collaboration or freelance assignments.",
+            "text-contact-after": "I value your feedback and comments, which help to improve my skills and the quality of my work. If you're looking for a dynamic, creative and committed web developer to add to your team or for a specific project, I'd be delighted to discuss it with you. Together, we can develop innovative digital solutions that will make a difference.",
             "message": "Message me here",
-            "email": "jordan10967@gmail.com",
-            "linkedin": "@jordanconot"
+            "email": "jordan.conot.dev@gmail.com",
+            "linkedin": "@jordanconot",
+            "contact-me": "Contact-me !"
         }
     },
     "Footer": {
@@ -60,6 +65,35 @@
         "text-top": "Web designer & front-end developer",
         "media": "Media",
         "credit": "Design Credit ~ Jordan from Figma community",
-        "copyright": "© Copyright 2024. Website by Jordan"
+        "copyright": "© Copyright 2024. Website by Jordan.C"
+    },
+    "Page-projects": {
+        "my-projects": "List of my projects",
+        "complets-apps": "Complete apps",
+        "small-projects": "Small-projects"
+    },
+    "Page-about": {
+        "text": "My expertise spans both front-end and back-end development, allowing me to architect and create robust, user-friendly applications from start to finish. My proficiency in languages such as HTML, CSS, JavaScript, and a range of JavaScript frameworks such as ReactJs, NextJs, Node, Express empowers me to bring ideas to life while ensuring functionality, security, and scalability.",
+        "soft-skills": "My-soft-skills",
+        "communication": "Communication",
+        "communication-text": "Effectively conveys ideas, listens, engages in constructive dialogue.",
+        "adaptability": "Adaptability",
+        "adaptability-text": "Quickly adjusts to changing technologies and requirements.",
+        "problem-solving": "Problem Solving",
+        "problem-solving-text": "Efficiently identifies and resolves technical challenges.",
+        "time-management": "Time Management",
+        "time-management-text": "Plans and adheres to deadlines, organized work.",
+        "creativity": "Creativity",
+        "creativity-text": "Innovates in design and development approach.",
+        "teamwork": "Teamwork",
+        "teamwork-text": "Collaborative, actively contributes to the team.",
+        "self-reliance":"Self-reliance",
+        "self-reliance-text":"Capable of working independently, takes initiative.",
+        "attention-to-detail": "Attention to Detail",
+        "attention-to-detail-text": "Precision in coding, quality-focused.",
+        "continuous-learning": "Continuous Learning",
+        "continuous-learning-text": "Constantly educates self on new technologies.",
+        "stress-management": "Stress Management",
+        "stress-management-text": "Remains calm and productive under pressure."
     }
 }

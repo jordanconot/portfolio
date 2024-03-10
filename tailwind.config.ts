@@ -8,13 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      height: {
+        "fit-content": "fit-content"
+      },
+      width: {
+        'min-content': "min-content"
+      },
       colors: {
         "color-1": "#0047C3",
         "color-2": "#ABB2BF",
         "color-3": "#FFF",
+        "color-4": "#1E1E1E"
       },
       backgroundColor: {
-        "backgroundColor": "#1E1E1E"
+        "backgroundColor": "#1E1E1E",
+        "backgroundColor-menu": "#282C33",
+        "backgroundColor-nav": "#0047C3",
+        "backgroundColor-white": "#FFF",
       },
       backgroundImage: { 
       },
