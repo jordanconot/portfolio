@@ -7,7 +7,8 @@ import NavBar from '@/components/NavBar';
 import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
 
-const page = () => {
+export default function Page() {
+    
     return (
         <>
             <div className='m-4 md:mr-32 md:ml-32'>
@@ -24,5 +25,3 @@ const page = () => {
         </>
     );
 };
-
-export default page;

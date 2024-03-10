@@ -23,23 +23,23 @@ const Menu: React.FC<MenuProps> = ({ closeMenu }) => {
                     </div>
                     <div className='flex gap-4'>
                         {lang === 'fr' && (
-                            <button className='text-base font-bold text-color-3' onClick={() => setLang('en')}>EN</button>
+                            <button className='text-base font-bold text-color-3 hover:opacity-50' onClick={() => setLang('en')}>EN</button>
                         )}
                         {lang === 'en' && (
-                            <button className='text-base font-bold text-color-3' onClick={() => setLang('fr')}>FR</button>
+                            <button className='text-base font-bold text-color-3 hover:opacity-50' onClick={() => setLang('fr')}>FR</button>
                         )}
-                        <Image src='/assets/svg/icon-cross-white.svg' alt='Menu' width={24} height={24} onClick={closeMenu} />
+                        <Image className='cursor-pointer' src='/assets/svg/icon-cross-white.svg' alt='Menu' width={24} height={24} onClick={closeMenu} />
                     </div>
                 </nav>
                 <div className='mt-10'>
                     <ul className='flex flex-col gap-8'>
-                        <Link href='/' className='text-4xl text-color-3 font-medium'>
+                        <Link href='/' className='text-4xl text-color-3 font-medium hover:opacity-50'>
                             <span className='text-color-1 text-4xl font-medium'>#</span>{t('Nav.home')}</Link>
-                        <Link href='/projets' className='text-4xl text-color-3 font-medium'>
+                        <Link href='/projets' className='text-4xl text-color-3 font-medium hover:opacity-50'>
                             <span className='text-color-1 text-4xl font-medium'>#</span>{t('Nav.projects')}</Link>
-                        <Link href='/a-propos' className='text-4xl text-color-3 font-medium'>
+                        <Link href='/a-propos' className='text-4xl text-color-3 font-medium hover:opacity-50'>
                             <span className='text-color-1 text-4xl font-medium'>#</span>{t('Nav.about')}</Link>
-                        <Link href='/contact' className='text-4xl text-color-3 font-medium'>
+                        <Link href='/contact' className='text-4xl text-color-3 font-medium hover:opacity-50'>
                             <span className='text-color-1 text-4xl font-medium'>#</span>{t('Nav.contact')}</Link>
                     </ul>
                 </div>

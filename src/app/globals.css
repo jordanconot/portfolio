@@ -27,6 +27,18 @@ body {
   border-radius: 70%;
 }
 
+.underline-effect-scrolled::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  border: 2px solid transparent;
+  border-top-color: #0047C3;
+  border-radius: 70%;
+}
+
 /* Scrollbar */
 
 /*l'ensemble de la scrollbar */

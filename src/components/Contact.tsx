@@ -16,16 +16,16 @@ const Contact: React.FC<ContactProps> = ({ isContactPage }) => {
             <div className='flex items-center'>
                 <h2 className='text-color-3 text-3xl font-medium'>
                     <span className='text-color-1 text-3xl'>{isContactPage ? '/' : '#'}</span>{t('Main.contact.contact')}</h2>
-                    <div className='h-[1px] w-[200px] bg-backgroundColor-nav ml-6 hidden lg:block'></div>
+                <div className='h-[1px] w-[200px] bg-backgroundColor-nav ml-6 hidden lg:block'></div>
             </div>
             <div className='lg:flex lg:flex-row lg:flex-wrap lg:justify-between'>
-            <div className='flex flex-col gap-4 lg:max-w-[50%]'>
+                <div className='flex flex-col gap-4 lg:max-w-[50%]'>
                     <p className='text-color-2'>{t('Main.contact.text-contact')}</p>
                     {isContactPage && (
                         <p className='text-color-2'>{t('Main.contact.text-contact-after')}</p>
                     )}
                 </div>
-                <div className='border-color-2 border flex w-full md: max-w-max'>
+                <div className='border-color-2 border flex mt-6 w-full md:max-w-max'>
                     <div className='p-4 flex flex-col gap-4'>
                         <p className='text-color-3'>{t('Main.contact.message')}</p>
                         <div className='flex items-center gap-2'>
@@ -38,7 +38,7 @@ const Contact: React.FC<ContactProps> = ({ isContactPage }) => {
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
         </section>
     );
 };
