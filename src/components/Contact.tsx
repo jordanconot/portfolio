@@ -12,7 +12,7 @@ const Contact: React.FC<ContactProps> = ({ isContactPage }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
     return (
-        <section className='flex flex-col gap-6 mt-8'>
+        <section className='flex flex-col gap-10 mt-16'>
             <div className='flex items-center'>
                 <h2 className='text-color-3 text-3xl font-medium'>
                     <span className='text-color-1 text-3xl'>{isContactPage ? '/' : '#'}</span>{t('Main.contact.contact')}</h2>

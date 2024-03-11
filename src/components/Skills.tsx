@@ -14,25 +14,25 @@ const Skills: React.FC<SkillsProps> = ({ isHomePage, isAboutPage }) => {
     const { t } = useTranslation(lang);
     return (
 
-        <section className='flex flex-col gap-6 mt-8'>
+        <section className='flex flex-col gap-10 mt-16'>
             <div className='flex items-center'>
                 <h2 className='text-color-3 text-3xl'><span className='text-color-1 text-3xl'>#</span>{t('Main.skills.skills')}</h2>
                 <div className='h-[1px] w-[200px] bg-backgroundColor-nav ml-6 hidden lg:block'></div>
             </div>
-            <div className='flex flex-col gap-4 lg:flex-row lg:items-center'>
+            <div className='flex flex-col gap-4 lg:flex-row lg:items-center 2xl:justify-between'>
             
             <div className='hidden lg:block'>
             <Image src='/assets/img/skills.png' alt='Skills' width={349} height={282} />
             </div>
             <div className='flex flex-col gap-4 lg:flex-row lg:flex-wrap lg:gap-6'>
-                <div className='border-color-2 border flex flex-col lg:h-fit-content lg:ml-auto'>
+                <div className='border-color-2 border flex flex-col lg:h-fit-content lg:ml-auto 2xl:mb-[64px]'>
                     <span className='font-semibold text-color-3 p-2'>{t('Main.skills.title-languages')}</span>
                     <div className='border-color-2 border border-x-0 border-b-0'>
                         <p className='text-color-2 p-2'>{t('Main.skills.languages')}</p>
                     </div>
                 </div>
 
-                <div className='border-color-2 border flex flex-col lg:h-fit-content lg:ml-auto'>
+                <div className='border-color-2 border flex flex-col lg:h-fit-content lg:ml-auto 2xl:mt-[64px]'>
                     <span className='font-semibold text-color-3 p-2'>{t('Main.skills.title-frameworks')}</span>
                     <div className='border-color-2 border border-x-0 border-b-0 lg:w-52'>
                         <p className='text-color-2 p-2'>{t('Main.skills.frameworks')}</p>
@@ -46,7 +46,7 @@ const Skills: React.FC<SkillsProps> = ({ isHomePage, isAboutPage }) => {
                     </div>
                 </div>
 
-                <div className='border-color-2 border flex flex-col lg:h-fit-content lg:w-min-content lg:ml-auto lg:mt-auto'>
+                <div className='border-color-2 border flex flex-col lg:h-fit-content lg:w-min-content lg:ml-auto lg:mt-auto 2xl:'>
                     <span className='font-semibold text-color-3 p-2'>{t('Main.skills.title-others')}</span>
                     <div className='border-color-2 border border-x-0 border-b-0 lg:w-52'>
                         <p className='text-color-2 p-2'>{t('Main.skills.others')}</p>

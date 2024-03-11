@@ -15,7 +15,7 @@ const About: React.FC<AboutProps> = ({ isAboutPage }) => {
     const arrow = `->`
 
     return (
-        <section className='flex flex-col gap-6 mt-8'>
+        <section className='flex flex-col gap-10 mt-16'>
             <div className='flex items-center'>
                 <h2 className='text-color-3 text-3xl font-medium'><span className='text-color-1 text-3xl'>
                     {isAboutPage ? '/' : '#'}</span>{t('Main.about.about')}</h2>
@@ -34,7 +34,7 @@ const About: React.FC<AboutProps> = ({ isAboutPage }) => {
             </button>
          
             </div>
-            <div className='relative z-10 md:flex md:justify-end'>
+            <div className='relative z-10 mt-8 md:flex md:justify-end'>
                 <Image src='/assets/img/about-me.webp' alt='Boy' width={339} height={507} />
                 <div className='absolute h-[1px] bottom-0 right-6 w-64 bg-backgroundColor-nav'></div>
             </div>

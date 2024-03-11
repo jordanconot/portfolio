@@ -15,7 +15,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
     const arrow = `~~>`;
 
     return (
-        <section className='flex flex-col gap-6'>
+        <section className='flex flex-col gap-10'>
             <div className='flex items-center justify-between'>
                 <h2 className='text-color-3 text-3xl font-medium lg:flex lg:items-center'>
                     <span className='text-color-1 text-3xl'>{isProjectsPage ? '/' : '#'}</span>{t('Main.h2')}
@@ -35,7 +35,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
             <div className='lg: flex flex-wrap justify-between gap-6'>
 
             
-            <div className='border-color-2 border flex flex-col lg:w-[47%]'>
+            <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[31%]'>
                 <div className='h-60 flex'>
                     <Image className='lg:h-60' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={1920} height={1080} />
                 </div>
@@ -56,7 +56,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                 </div>
             </div>
 
-            <div className='border-color-2 border flex flex-col lg:w-[47%]'>
+            <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[31%]'>
                 <div className='h-60 flex'>
                     <Image className='lg:h-60' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={1920} height={1080} />
                 </div>
@@ -77,7 +77,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                 </div>
             </div>
 
-            <div className='border-color-2 border flex flex-col lg:w-[47%]'>
+            <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[31%]'>
                 <div className='h-60 flex'>
                     <Image className='lg:h-60' src='/assets/img/les-petits-plats.jpg' alt='Projet Les petits plats' width={1920} height={1080}  />
                 </div>
@@ -102,7 +102,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                 </div>
             </div>
 
-            <div className='border-color-2 border flex flex-col lg:w-[47%]'>
+            <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[31%]'>
                 <div className='h-60 flex'>
                     <Image className='lg:h-60' src='/assets/img/oh-my-food.jpg' alt='Projet sport see' width={1920} height={1080}  />
                 </div>

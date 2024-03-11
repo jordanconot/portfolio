@@ -10,8 +10,8 @@ const Banner = () => {
 
     return (
         <>
-            <header className='mt-8 flex flex-col gap-6 lg:flex-row'>
-                <div className='flex flex-col gap-4 lg:flex lg:flex-col lg:justify-center lg:w-1/2 lg:gap-10'>
+            <header className='mt-12 flex flex-col gap-6 lg:flex-row xl:justify-between'>
+                <div className='flex flex-col gap-8 lg:flex lg:flex-col lg:justify-center lg:w-1/2 lg:gap-10'>
                 <h1 className='text-3xl text-color-3 font-semibold md:text-4xl'>
                     {t('Banner.h1.before')}
                     <span className='text-color-1 md:text-4xl'> {t('Banner.h1.strong')}</span>
@@ -45,7 +45,7 @@ const Banner = () => {
                     <Image src='/assets/svg/icon-legend.svg' alt='Guillemet' width={25} height={20} />
                     </legend>
                 </fieldset>
-                <div className='border border-color-2 border-t-0 -mt-2 ml-[70%] p-4'>
+                <div className='border border-color-2 border-t-0 -mt-2 ml-[70%]'>
                     <p className=' text-2xl text-center p-3 text-color-3 font-normal'>{t('Banner.author')}</p>
                 </div>
             </div>

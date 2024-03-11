@@ -4,10 +4,10 @@ import NavBar from '@/components/NavBar';
 import Skills from '@/components/Skills';
 import React from 'react';
 
-const page = () => {
+export default function Page()  {
     return (
         <>
-        <div className='m-4'>
+        <div className='m-4 md:mr-32 md:ml-32'>
             <NavBar />
             <main className='mt-8'>
                 <About isAboutPage={true}/>
@@ -18,5 +18,3 @@ const page = () => {
     </>
     );
 };
-
-export default page;

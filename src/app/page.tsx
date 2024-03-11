@@ -8,19 +8,19 @@ import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
 
 export default function Page() {
-    
+
     return (
         <>
             <div className='m-4 md:mr-32 md:ml-32'>
-                <NavBar />
-                <Hero />
-                <main className='mt-8'>
-                    <Projects isProjectsPage={false} />
-                    <Skills isHomePage={true} isAboutPage={false}/>
-                    <About isAboutPage={false}/>
-                    <Contact isContactPage={false}/>
-                </main>
-            </div>
+                    <NavBar />
+                    <Hero />
+                    <main className='mt-16'>
+                        <Projects isProjectsPage={false} />
+                        <Skills isHomePage={true} isAboutPage={false} />
+                        <About isAboutPage={false} />
+                        <Contact isContactPage={false} />
+                    </main>
+                </div>
             <Footer />
         </>
     );
