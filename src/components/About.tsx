@@ -37,7 +37,7 @@ const About: React.FC<AboutProps> = ({ isAboutPage }) => {
                     </div>
 
                 </div>
-                <div className='relative z-10 mt-8 flex-col flex items-center md:justify-end'>
+                <div className='relative z-10 mt-8 flex-col flex items-center md:justify-end lg:justify-center'>
                     <Image src='/assets/img/about-me.webp' alt='Boy' width={339} height={507} />
                     <div className='h-[1px] w-[80%] bg-backgroundColor-nav flex md:w-[60%] lg:w-full'></div>
                 </div>

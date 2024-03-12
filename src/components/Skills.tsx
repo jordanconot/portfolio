@@ -66,71 +66,71 @@ const Skills: React.FC<SkillsProps> = ({ isHomePage, isAboutPage }) => {
                     <div className='flex items-center justify-between'>
                         <h2 className='text-color-3 text-3xl'><span className='text-color-1 text-3xl'>#</span>{t('Page-about.soft-skills')}</h2>
                     </div>
-                    <div className='flex flex-col gap-4'>
-                        <div className='border-color-2 border flex flex-col'>
+                    <div className='flex flex-col gap-4 lg:flex-wrap lg:flex-row lg:justify-between'>
+                        <div className='border-color-2 border flex flex-col lg:w-[48%]'>
                             <span className='font-semibold text-color-3 p-2'>{t('Page-about.communication')}</span>
                             <div className='border-color-2 border border-x-0 border-b-0'>
                                 <p className='text-color-2 p-2'>{t('Page-about.communication-text')}</p>
                             </div>
                         </div>
 
-                        <div className='border-color-2 border flex flex-col'>
+                        <div className='border-color-2 border flex flex-col lg:w-[49%]'>
                             <span className='font-semibold text-color-3 p-2'>{t('Page-about.adaptability')}</span>
                             <div className='border-color-2 border border-x-0 border-b-0'>
                                 <p className='text-color-2 p-2'>{t('Page-about.adaptability-text')}</p>
                             </div>
                         </div>
 
-                        <div className='border-color-2 border flex flex-col'>
+                        <div className='border-color-2 border flex flex-col lg:w-[48%]'>
                             <span className='font-semibold text-color-3 p-2'>{t('Page-about.problem-solving')}</span>
                             <div className='border-color-2 border border-x-0 border-b-0'>
                                 <p className='text-color-2 p-2'>{t('Page-about.problem-solving-text')}</p>
                             </div>
                         </div>
 
-                        <div className='border-color-2 border flex flex-col'>
+                        <div className='border-color-2 border flex flex-col lg:w-[49%]'>
                             <span className='font-semibold text-color-3 p-2'>{t('Page-about.time-management')}</span>
                             <div className='border-color-2 border border-x-0 border-b-0'>
                                 <p className='text-color-2 p-2'>{t('Page-about.time-management-text')}</p>
                             </div>
                         </div>
 
-                        <div className='border-color-2 border flex flex-col'>
+                        <div className='border-color-2 border flex flex-col lg:w-[48%]'>
                             <span className='font-semibold text-color-3 p-2'>{t('Page-about.creativity')}</span>
                             <div className='border-color-2 border border-x-0 border-b-0'>
                                 <p className='text-color-2 p-2'>{t('Page-about.creativity-text')}</p>
                             </div>
                         </div>
 
-                        <div className='border-color-2 border flex flex-col'>
+                        <div className='border-color-2 border flex flex-col lg:w-[49%]'>
                             <span className='font-semibold text-color-3 p-2'>{t('Page-about.stress-management')}</span>
                             <div className='border-color-2 border border-x-0 border-b-0'>
                                 <p className='text-color-2 p-2'>{t('Page-about.stress-management-text')}</p>
                             </div>
                         </div>
 
-                        <div className='border-color-2 border flex flex-col'>
+                        <div className='border-color-2 border flex flex-col lg:w-[48%]'>
                             <span className='font-semibold text-color-3 p-2'>{t('Page-about.teamwork')}</span>
                             <div className='border-color-2 border border-x-0 border-b-0'>
                                 <p className='text-color-2 p-2'>{t('Page-about.teamwork-text')}</p>
                             </div>
                         </div>
 
-                        <div className='border-color-2 border flex flex-col'>
+                        <div className='border-color-2 border flex flex-col lg:w-[49%]'>
                             <span className='font-semibold text-color-3 p-2'>{t('Page-about.self-reliance')}</span>
                             <div className='border-color-2 border border-x-0 border-b-0'>
                                 <p className='text-color-2 p-2'>{t('Page-about.self-reliance-text')}</p>
                             </div>
                         </div>
 
-                        <div className='border-color-2 border flex flex-col'>
+                        <div className='border-color-2 border flex flex-col lg:w-[48%]'>
                             <span className='font-semibold text-color-3 p-2'>{t('Page-about.attention-to-detail')}</span>
                             <div className='border-color-2 border border-x-0 border-b-0'>
                                 <p className='text-color-2 p-2'>{t('Page-about.attention-to-detail-text')}</p>
                             </div>
                         </div>
 
-                        <div className='border-color-2 border flex flex-col'>
+                        <div className='border-color-2 border flex flex-col lg:w-[49%]'>
                             <span className='font-semibold text-color-3 p-2'>{t('Page-about.continuous-learning')}</span>
                             <div className='border-color-2 border border-x-0 border-b-0'>
                                 <p className='text-color-2 p-2'>{t('Page-about.continuous-learning-text')}</p>
