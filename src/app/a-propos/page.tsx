@@ -14,7 +14,7 @@ export default function Page()  {
                 <Skills isAboutPage={true} isHomePage={false}/>
             </main>
         </div>
-        <Footer />
+        <Footer isContactPage={false}/>
     </>
     );
 };

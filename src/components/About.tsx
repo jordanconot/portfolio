@@ -21,7 +21,7 @@ const About: React.FC<AboutProps> = ({ isAboutPage }) => {
                 <div className='h-[1px] w-[420px] bg-backgroundColor-nav ml-6 hidden lg:block'></div>
             </div>
             <div className='lg:flex lg:flex-row lg:flex-wrap lg:justify-between'>
-                <div className='flex flex-col gap-4 lg:max-w-[50%] lg:gap-12'>
+                <div className='flex flex-col gap-4 lg:max-w-[50%] lg:gap-6'>
                     <p className='text-color-3 font-semibold 2xl:text-2xl'>{t('Main.about.text-welcome')}</p>
                     <p className='text-color-2'>{t('Main.about.text')}</p>
                     <p className='text-color-2'>{t('Main.about.text-after')}</p>

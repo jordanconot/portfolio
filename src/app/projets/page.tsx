@@ -12,7 +12,7 @@ export default function Page()  {
                     <Projects isProjectsPage={true} />
                 </main>
             </div>
-            <Footer />
+            <Footer isContactPage={false}/>
         </>
     );
 };

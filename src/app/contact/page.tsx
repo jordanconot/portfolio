@@ -9,10 +9,10 @@ export default function Page()  {
         <div className='m-4 md:mr-32 md:ml-32'>
             <NavBar />
             <main className='mt-8'>
-                <Contact isContactPage={true}/>
+                <Contact isContactPage={true} isHomePage={false}/>
             </main>
         </div>
-        <Footer />
+        <Footer isContactPage />
     </>
     );
 };

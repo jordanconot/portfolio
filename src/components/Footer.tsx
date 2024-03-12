@@ -5,11 +5,16 @@ import useTranslation from '@/hooks/useTranslation';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Footer = () => {
+interface footerProps {
+    isContactPage: boolean
+};
+
+const Footer: React.FC<footerProps> = ({ isContactPage }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
     return (
-        <footer className='border-t border-color-3 mt-14'>
+        
+        <footer className={`${isContactPage ? 'xl:absolute xl:w-full xl:bottom-0' : ''} border-t border-color-3 mt-14`}>
             <div className='gap-2 mt-8 md:ml-32 md:mr-32'>
                 <div className='flex gap-8 flex-col items-center md:justify-between lg:flex-row'>
                     <div className='flex flex-col gap-2 lg:items-start'>

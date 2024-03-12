@@ -18,10 +18,10 @@ export default function Page() {
                         <Projects isProjectsPage={false} />
                         <Skills isHomePage={true} isAboutPage={false} />
                         <About isAboutPage={false} />
-                        <Contact isContactPage={false} />
+                        <Contact isContactPage={false} isHomePage={true} />
                     </main>
                 </div>
-            <Footer />
+            <Footer isContactPage={false} />
         </>
     );
 };

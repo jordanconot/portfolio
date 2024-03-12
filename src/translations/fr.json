@@ -52,8 +52,10 @@
         },
         "contact": {
             "contact": "Contact",
-            "text-contact": "N'hésitez pas à me contacter pour discuter de projets, d'idées, ou pour toute demande de renseignements. Je suis passionné par le monde du développement web et ouvert à toutes opportunités de collaborations ou de missions en freelance.",
-            "text-contact-after": "Vos retours et commentaires sont précieux pour moi ; ils contribuent à l'amélioration de mes compétences et à la qualité de mes réalisations. Si vous cherchez un développeur web dynamique, créatif et engagé pour enrichir votre équipe ou pour un projet spécifique, je serais ravi d'en discuter avec vous. Ensemble, nous pouvons développer des solutions numériques innovantes qui feront la différence.",
+            "text-contact": "Pour toute discussion de projet, suggestion ou information, je suis à votre écoute. Passionné par le développement web, je suis toujours prêt à explorer de nouvelles collaborations ou missions en indépendant.",
+            "text-contact-after": "Votre feedback est essentiel pour moi ; il nourrit mon évolution professionnelle et la finesse de mes projets. À la recherche d'un développeur web dynamique, inventif et dévoué pour renforcer votre équipe ou mener à bien un projet défini, je suis tout ouïe. Travaillons ensemble à créer des solutions numériques avant-gardistes qui marqueront un tournant.",
+            "text-contact-after-after": "J'apprécie la synergie entre idées novatrices et technologie de pointe, qui ensemble permettent de transcender les attentes. Mon objectif est de faire de chaque projet une réussite empreinte d'excellence et d'originalité. Contactez-moi, et posons les fondations d'un partenariat fructueux et d'innovations marquantes.",
+            "text-contact-end": "Au plaisir de partager avec vous 😊",
             "message": "Envoyez-moi un message",
             "email": "jordan.conot.dev@gmail.com",
             "linkedin": "@jordanconot",

@@ -5,10 +5,11 @@ import useTranslation from '@/hooks/useTranslation';
 import Image from 'next/image';
 
 interface ContactProps {
-    isContactPage: boolean
+    isContactPage: boolean,
+    isHomePage: boolean
 }
 
-const Contact: React.FC<ContactProps> = ({ isContactPage }) => {
+const Contact: React.FC<ContactProps> = ({ isContactPage, isHomePage }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
     return (
@@ -19,13 +20,21 @@ const Contact: React.FC<ContactProps> = ({ isContactPage }) => {
                 <div className='h-[1px] w-[200px] bg-backgroundColor-nav ml-6 hidden lg:block'></div>
             </div>
             <div className='lg:flex lg:flex-row lg:flex-wrap lg:justify-between'>
-                <div className='flex flex-col gap-4 lg:max-w-[50%]'>
+                <div className='flex flex-col gap-6 lg:max-w-[50%]'>
                     <p className='text-color-2'>{t('Main.contact.text-contact')}</p>
-                    {isContactPage && (
+                    {isHomePage && (
                         <p className='text-color-2'>{t('Main.contact.text-contact-after')}</p>
                     )}
+                    
+                    {isContactPage && (
+                        <>
+                            <p className='text-color-2'>{t('Main.contact.text-contact-after')}</p>
+                            <p className='text-color-2'>{t('Main.contact.text-contact-after-after')}</p>
+                            <p className='text-color-2'>{t('Main.contact.text-contact-end')}</p>
+                        </>
+                    )}
                 </div>
-                <div className='border-color-2 border flex mt-6 w-full md:max-w-max'>
+                <div className='border-color-2 border flex mt-6 h-max w-max'>
                     <div className='p-4 flex flex-col gap-4'>
                         <p className='text-color-3'>{t('Main.contact.message')}</p>
                         <div className='flex items-center gap-2'>

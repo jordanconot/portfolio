@@ -52,8 +52,10 @@
         },
         "contact": {
             "contact": "Contact",
-            "text-contact": "Please don't hesitate to contact me to discuss projects or ideas, or for any other enquiries. I'm passionate about the world of web development and open to all opportunities for collaboration or freelance assignments.",
-            "text-contact-after": "I value your feedback and comments, which help to improve my skills and the quality of my work. If you're looking for a dynamic, creative and committed web developer to add to your team or for a specific project, I'd be delighted to discuss it with you. Together, we can develop innovative digital solutions that will make a difference.",
+            "text-contact": "For project discussions, suggestions, or inquiries, I'm all ears. As a web development enthusiast, I'm always ready to delve into new collaborations or freelance assignments.",
+            "text-contact-after": "Your feedback is vital to me; it fuels my professional growth and enhances the caliber of my work. If you're in search of a dynamic, inventive, and dedicated web developer to bolster your team or execute a specific project, I'm eager to talk. Let's collaborate to forge pioneering digital solutions that will make an impact.",
+            "text-contact-after-after": "I value the synergy between innovative ideas and cutting-edge technology, which together have the power to exceed expectations. My aim is to ensure each project is a beacon of excellence and uniqueness. Reach out to me, and let's lay the groundwork for a fruitful partnership and remarkable innovations.",
+            "text-contact-end": "Looking forward to sharing it with you 😊",
             "message": "Message me here",
             "email": "jordan.conot.dev@gmail.com",
             "linkedin": "@jordanconot",
