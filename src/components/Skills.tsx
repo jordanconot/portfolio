@@ -16,7 +16,7 @@ const Skills: React.FC<SkillsProps> = ({ isHomePage, isAboutPage }) => {
 
         <section className='flex flex-col gap-10 mt-16'>
             <div className='flex items-center'>
-                <h2 className='text-color-3 text-3xl'><span className='text-color-1 text-3xl'>#</span>{t('Main.skills.skills')}</h2>
+                <h2 className='text-color-3 text-3xl font-medium'><span className='text-color-1 text-3xl'>#</span>{t('Main.skills.skills')}</h2>
                 <div className='h-[1px] w-[200px] bg-backgroundColor-nav ml-6 hidden lg:block'></div>
             </div>
             <div className='flex flex-col gap-4 lg:flex-row lg:items-center 2xl:justify-between'>

@@ -22,13 +22,18 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                     <div className='h-[1px] w-[420px] bg-backgroundColor-nav ml-6 hidden lg:block'></div>
                     </h2>
                 {!isProjectsPage && (
-                    <span className='text-color-3'>{t('Main.span')} {arrow}</span>
+                    <Link href='/projets'>
+                        <span className='text-color-3'>{t('Main.span')} {arrow}</span>
+                    </Link>
                 )}
             </div>
             {isProjectsPage && (
                 <>
                     <p className='text-color-3'>{t('Page-projects.my-projects')}</p>
-                    <p className='text-color-3 text-3xl font-medium'><span className='text-color-1 text-3xl'>#</span>{t('Page-projects.complets-apps')}</p>
+                    <p className='text-color-3 text-3xl font-medium'>
+                        <span className='text-color-1 text-3xl'>
+                            #
+                        </span>{t('Page-projects.complets-apps')}</p>
                 </>
             )}
 

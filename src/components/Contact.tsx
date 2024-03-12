@@ -29,12 +29,16 @@ const Contact: React.FC<ContactProps> = ({ isContactPage }) => {
                     <div className='p-4 flex flex-col gap-4'>
                         <p className='text-color-3'>{t('Main.contact.message')}</p>
                         <div className='flex items-center gap-2'>
-                            <Image src='/assets/svg/icon-email.svg' alt='Email' width={32} height={32} />
-                            <p className='text-color-2'>{t('Main.contact.email')}</p>
+                            <a className='flex items-center gap-2' href='mailto:jordan.conot.dev@gmail.com?subject=Demande de renseignement depuis le portfolio 🤗'>
+                                <Image src='/assets/svg/icon-email.svg' alt='Email' width={32} height={32} />
+                                <p className='text-color-2 hover:opacity-50'>{t('Main.contact.email')}</p>
+                            </a>
                         </div>
                         <div className='flex items-center gap-2'>
-                            <Image src='/assets/svg/icon-linkedin.svg' alt='Email' width={32} height={32} />
-                            <p className='text-color-2'>{t('Main.contact.linkedin')}</p>
+                            <a className='flex items-center gap-2' href='https://www.linkedin.com/in/jordanconot/' target='_blank'>
+                                <Image src='/assets/svg/icon-linkedin.svg' alt='Email' width={32} height={32} />
+                                <p className='text-color-2 hover:opacity-50'>{t('Main.contact.linkedin')}</p>
+                            </a>
                         </div>
                     </div>
                 </div>

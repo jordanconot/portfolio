@@ -44,34 +44,43 @@ export default function NavBar() {
             className={`flex justify-between lg:sticky lg:top-3 
             ${scrolled ? 'bg-backgroundColor-white fixed top-0 left-0 right-0 z-50 w-full p-4 lg:rounded lg:mt-4 ' : ''}`}
         >
+
             <div className='flex items-center gap-4'>
                 {scrolled && (
                     <>
-                        <Image src='/assets/svg/icon-logo-black.svg' alt='logo' width={16} height={16}></Image>
-                        <span className='text-base font-bold text-color-4 md:text-2xl'>{t('Nav.name')}</span>
+                        <Link className='hover:opacity-50' href='/'>
+                            <Image src='/assets/svg/icon-logo-black.svg' alt='logo' width={16} height={16}></Image>
+                        </Link>
+                        <Link className='hover:opacity-50' href='/'>
+                            <span className='text-base font-bold text-color-4 md:text-2xl'>{t('Nav.name')}</span>
+                        </Link>
                     </>
                 )}
-                <Image src='/assets/svg/logo-default-white.svg' alt='logo' width={16} height={16}></Image>
-                <span className='text-base font-bold text-color-3 md:text-2xl'>{t('Nav.name')}</span>
+                <Link className='hover:opacity-50' href='/'>
+                    <Image src='/assets/svg/logo-default-white.svg' alt='logo' width={16} height={16}></Image>
+                </Link>
+                <Link className='hover:opacity-50' href='/'>
+                    <span className='text-base font-bold text-color-3 md:text-2xl'>{t('Nav.name')}</span>
+                </Link>
             </div>
             <div className='flex items-center gap-4'>
                 <div className='hidden lg:flex gap-4 lg:gap-6'>
-                {lang === 'fr' && (
-                    <button
-                        className={`text-base font-bold mr-6 hover:opacity-50 ${scrolled ? 'text-color-4' : 'text-color-3'}`}
-                        onClick={() => setLang('en')}
-                    >
-                        EN
-                    </button>
-                )}
-                {lang === 'en' && (
-                    <button
-                        className={`text-base font-bold mr-6 hover:opacity-50 ${scrolled ? 'text-color-4' : 'text-color-3'}`}
-                        onClick={() => setLang('fr')}
-                    >
-                        FR
-                    </button>
-                )}
+                    {lang === 'fr' && (
+                        <button
+                            className={`text-base font-bold mr-6 hover:opacity-50 ${scrolled ? 'text-color-4' : 'text-color-3'}`}
+                            onClick={() => setLang('en')}
+                        >
+                            EN
+                        </button>
+                    )}
+                    {lang === 'en' && (
+                        <button
+                            className={`text-base font-bold mr-6 hover:opacity-50 ${scrolled ? 'text-color-4' : 'text-color-3'}`}
+                            onClick={() => setLang('fr')}
+                        >
+                            FR
+                        </button>
+                    )}
                     <Link
                         href='/'
                         className={`relative text-base ${scrolled ? 'text-color-4 font-bold' : 'text-color-3 font-bold'} ${currentPath === '/' ? (scrolled ? 'underline-effect-scrolled' : 'underline-effect') : 'hover:opacity-50'}`}
