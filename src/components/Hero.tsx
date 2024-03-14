@@ -12,7 +12,7 @@ const Banner = () => {
     return (
         <>
             <header className='mt-12 flex flex-col gap-6 lg:flex-row lg:gap-14 xl:justify-between 2xl:gap-36 2xl:justify-start'>
-                <div className='flex flex-col gap-8 lg:flex lg:flex-col lg:justify-center lg:w-1/2 lg:gap-10'>
+                <div className='flex flex-col gap-8  lg:flex lg:flex-col lg:justify-center lg:w-1/2 lg:gap-10'>
                     <h1 className='text-3xl text-color-3 font-semibold md:text-4xl'>
                         {t('Banner.h1.before')}
                         <span className='text-color-1 md:text-4xl'> {t('Banner.h1.strong')}</span>
@@ -28,7 +28,7 @@ const Banner = () => {
                         </button>
                     </div>
                 </div>
-                <div className='mt-4 flex w-full md:items-center lg:w-auto'>
+                <div className='mt-4 flex w-full  md:items-center lg:w-auto'>
                     <div className='w-full lg:w-auto'>
                         <Image className='md:w-full' src='/assets/img/boy.png' alt='Boy' width={400} height={261} />
                         <div className='p-1 text-center border-color-2 border text-sm'>

@@ -2,6 +2,7 @@
 import React, { createContext, useState} from "react";
 import type { Metadata } from "next";
 import "./globals.css";
+import 'animate.css';
 
 type LanguageContextType = {
   lang: string;

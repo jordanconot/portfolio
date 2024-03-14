@@ -42,7 +42,7 @@ export default function NavBar() {
     return (
         <nav
             className={`flex justify-between lg:sticky lg:top-3 
-            ${scrolled ? 'bg-backgroundColor-white fixed top-0 left-0 right-0 z-50 w-full p-4 lg:rounded lg:mt-4 ' : ''}`}
+            ${scrolled ? 'bg-backgroundColor-white fixed top-0 left-0 right-0 z-40 w-full p-4 lg:rounded lg:mt-4 ' : ''}`}
         >
 
             <div className='flex items-center gap-4'>

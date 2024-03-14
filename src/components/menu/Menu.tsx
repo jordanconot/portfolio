@@ -14,12 +14,12 @@ const Menu: React.FC<MenuProps> = ({ closeMenu }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
     return (
-        <div className='fixed top-0 left-0 w-full h-full flex bg-backgroundColor'>
+        <div className='fixed top-0 left-0 w-full h-full flex bg-backgroundColor z-50'>
             <div className='w-full m-4 relative'>
                 <nav className='flex items-center justify-between'>
                     <div className='flex gap-4'>
-                        <Image src='/assets/svg/logo-default-white.svg' alt='logo' width={16} height={16}></Image>
-                        <span className='text-base font-semibold text-color-3'>{t('Nav.name')}</span>
+                        <Image className='hover:opacity-50 cursor-pointer' src='/assets/svg/logo-default-white.svg' alt='logo' width={16} height={16}></Image>
+                        <span className='text-base font-semibold text-color-3 hover:opacity-50 cursor-pointer'>{t('Nav.name')}</span>
                     </div>
                     <div className='flex gap-4'>
                         {lang === 'fr' && (

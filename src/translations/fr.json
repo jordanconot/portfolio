@@ -23,12 +23,37 @@
     "Main": {
         "h2": "Projets",
         "span": "Voir plus",
+        "btn-live": "Voir",
+        "btn-github": "Github",
         "card": {
-            "language": "React Recharts js scss",
+            "language": "React | Recharts | js | scss",
             "title": "Sport see",
             "description": "Application sportive",
-            "btn-live": "Voir",
-            "btn-github": "Github"
+            "card-2": {
+                "language": "React | js | scss",
+                "title": "Kasa",
+                "description": "Plateforme de location de logement"
+            },
+            "card-3": {
+                "language": "Js | html | css",
+                "title": "Les petits plats",
+                "description": "Algorithme de recherche pour recette de cuisine"
+            },
+            "card-4": {
+                "language": "Html | css",
+                "title": "Oh my food",
+                "description": "Réserver une table au restaurant"
+            },
+            "card-5": {
+                "language": "Html | js | css",
+                "title": "Fisheye",
+                "description": "Plateforme de photographe"
+            },
+            "card-6": {
+                "language": "Html | css",
+                "title": "Réservia",
+                "description": "Plateforme de location de logement"
+            }
         },
         "skills": {
             "skills": "Compétences",
@@ -72,7 +97,39 @@
     "Page-projects": {
         "my-projects": "Liste de mes projets",
         "complets-apps": "Apps complètes",
-        "small-projects": "Petits Projets"
+        "small-projects": "Petits Projets",
+        "in-development": "En cours de développement",
+        "card-1": {
+            "language": "Js | html | css",
+            "title": "GameOn",
+            "description": "Gérer une modale de réservation"
+        },
+        "card-2": {
+            "language": "Js | Jest | html | css",
+            "title": "Billed",
+            "description": "Débugger et tester un SaaS"
+        },
+        "card-3": {
+            "language": "Js | html | css",
+            "title": "Kanap",
+            "description": "Manipuler le localstorage"
+        },
+        "card-4": {
+            "language": "Js | html | css",
+            "title": "La petite chouette",
+            "description": "Amélioration du SEO et du score GT metrix"
+        },
+        "card-in-dev-1": {
+            "language": "React | js | nodejs | mongodb | scss",
+            "title": "La croissanterie",
+            "description": "Application de gestion de petit déjeuner d'entreprise"
+        },
+        "card-in-dev-2": {
+            "language": "Nextjs | TypeScript | nestjs | mongodb | tailwind",
+            "title": "Portail client",
+            "description": "Réalisation d'un portail client"
+        }
+
     },
     "Page-about": {
         "text": "Mon expertise couvre à la fois le développement front-end et back-end, ce qui me permet d'architecturer et de créer des applications robustes et user-friendly du début à la fin. Ma maîtrise de langages tels que HTML, CSS, JavaScript, et d'une gamme de frameworks JavaScript tels que ReactJs, NextJs, Node, Express me permet de donner vie à des idées tout en garantissant la fonctionnalité, la sécurité et l'évolutivité.",
@@ -89,8 +146,8 @@
         "creativity-text": "Innovation dans la conception et l'approche de développement.",
         "teamwork": "Travail d'équipe",
         "teamwork-text": "Collaboratif, contribue activement à l'équipe",
-        "self-reliance":"Autonomie",
-        "self-reliance-text":"Capable de travailler seul, prend des initiatives.",
+        "self-reliance": "Autonomie",
+        "self-reliance-text": "Capable de travailler seul, prend des initiatives.",
         "attention-to-detail": "Attention aux détails",
         "attention-to-detail-text": "Minutie dans la programmation, souci de la qualité.",
         "continuous-learning": "Apprentissage continu",
