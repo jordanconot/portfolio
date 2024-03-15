@@ -25,6 +25,7 @@ export default function RootLayout({
   return (
     <LanguageContext.Provider value={{ lang, setLang }}>
       <html lang={lang}>
+      <link rel="icon" href="/assets/svg/logo-default-white.svg" /> 
         <body>{children}</body>
       </html>
     </LanguageContext.Provider>
