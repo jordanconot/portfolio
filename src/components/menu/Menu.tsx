@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Image from 'next/image';
 import { LanguageContext } from '@/app/layout';
 import useTranslation from '@/hooks/useTranslation';
@@ -13,6 +13,15 @@ interface MenuProps {
 const Menu: React.FC<MenuProps> = ({ closeMenu }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
+
+    useEffect(() => {
+        document.body.classList.add('no-scroll');
+
+        return () => {
+            document.body.classList.remove('no-scroll');
+        };
+    }, []);
+
     return (
         <div className='fixed top-0 left-0 w-full h-full flex bg-backgroundColor z-50'>
             <div className='w-full m-4 relative'>
