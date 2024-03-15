@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { LanguageContext } from '@/app/layout';
 import useTranslation from '@/hooks/useTranslation';
 import Link from 'next/link';
+import { useInView } from 'react-intersection-observer';
 
 interface ProjectsProps {
     isProjectsPage: boolean
@@ -14,8 +15,20 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
     const { t } = useTranslation(lang);
     const arrow = `~~>`;
 
+    const [ref1, inView1] = useInView({ threshold: 0.1, triggerOnce: true });
+    const [ref2, inView2] = useInView({ threshold: 0.1, triggerOnce: true });
+    const [ref3, inView3] = useInView({ threshold: 0.1, triggerOnce: true });
+    const [ref4, inView4] = useInView({ threshold: 0.1, triggerOnce: true });
+    const [ref5, inView5] = useInView({ threshold: 0.1, triggerOnce: true });
+    const [ref6, inView6] = useInView({ threshold: 0.1, triggerOnce: true });
+
+    const calculateDelay = (index: number) => {
+        return `${index * 200}ms`;
+    }
+
     return (
-        <section className='flex flex-col gap-10 mt-16'>
+        
+        <section className={`flex flex-col gap-10 mt-16 `}>
             <div className='flex items-center justify-between'>
                 <h2 className='text-color-3 text-3xl font-medium lg:flex lg:items-center'>
                     <span className='text-color-1 text-3xl'>{isProjectsPage ? '/' : '#'}</span>{t('Main.h2')}
@@ -40,9 +53,9 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
             <div className='lg: flex flex-wrap justify-between gap-10'>
 
 
-                <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
-                    <div className='h-60 flex'>
-                        <Image className='lg:h-60' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={1920} height={1080} />
+            <div ref={ref1} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView1 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(1) }}>
+                    <div className='h-60 flex relative'>
+                        <Image className='lg:h-60' src='/assets/img/sport-see.jpg' alt='Projet sport see' fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%" />
                     </div>
                     <div className='border-color-2 border flex p-2 border-x-0'>
                         <p className='text-color-2 uppercase pl-2'>{t('Main.card.language')}</p>
@@ -61,9 +74,9 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                     </div>
                 </div>
 
-                <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
-                    <div className='h-60 flex'>
-                        <Image className='lg:h-60' src='/assets/img/kasa.png' alt='Projet Kasa' width={1920} height={1080} />
+                <div ref={ref2} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView2 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(2) }}>
+                    <div className='h-60 flex relative'>
+                        <Image className='lg:h-60' src='/assets/img/kasa.png' alt='Projet Kasa' fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%" />
                     </div>
                     <div className='border-color-2 border flex p-2 border-x-0'>
                         <p className='text-color-2 uppercase pl-2'>{t('Main.card.card-2.language')}</p>
@@ -82,9 +95,9 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                     </div>
                 </div>
 
-                <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
-                    <div className='h-60 flex'>
-                        <Image className='lg:h-60' src='/assets/img/les-petits-plats.jpg' alt='Projet Les petits plats' width={1920} height={1080} />
+                <div ref={ref3} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView3 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(3) }}>
+                    <div className='h-60 flex relative'>
+                        <Image className='lg:h-60' src='/assets/img/les-petits-plats.jpg' alt='Projet Les petits plats' fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%" />
                     </div>
                     <div className='border-color-2 border flex p-2 border-x-0'>
                         <p className='text-color-2 uppercase pl-2'>{t('Main.card.card-3.language')}</p>
@@ -107,9 +120,9 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                     </div>
                 </div>
 
-                <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
-                    <div className='h-60 flex'>
-                        <Image className='lg:h-60' src='/assets/img/oh-my-food.jpg' alt='Projet Oh my food' width={1920} height={1080} />
+                <div ref={ref4} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView4 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(4) }}>
+                    <div className='h-60 flex relative'>
+                        <Image className='lg:h-60' src='/assets/img/oh-my-food.jpg' alt='Projet Oh my food' fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%" />
                     </div>
                     <div className='border-color-2 border flex p-2 border-x-0'>
                         <p className='text-color-2 uppercase pl-2'>{t('Main.card.card-4.language')}</p>
@@ -128,9 +141,9 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                     </div>
                 </div>
 
-                <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
-                    <div className='h-60 flex'>
-                        <Image className='lg:h-60' src='/assets/img/fisheye.png' alt='Projet Fisheye' width={1920} height={1080} />
+                <div ref={ref5} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView5 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(5) }}>
+                    <div className='h-60 flex relative'>
+                        <Image className='lg:h-60' src='/assets/img/fisheye.png' alt='Projet Fisheye' fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%" />
                     </div>
                     <div className='border-color-2 border flex p-2 border-x-0'>
                         <p className='text-color-2 uppercase pl-2'>{t('Main.card.card-5.language')}</p>
@@ -149,9 +162,9 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                     </div>
                 </div>
 
-                <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
-                    <div className='h-60 flex'>
-                        <Image className='lg:h-60' src='/assets/img/reservia.png' alt='Projet Réservia' width={1920} height={1080} />
+                <div ref={ref6} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView6 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(6) }}>
+                    <div className='h-60 flex relative'>
+                        <Image className='lg:h-60' src='/assets/img/reservia.png' alt='Projet Réservia' fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%"  />
                     </div>
                     <div className='border-color-2 border flex p-2 border-x-0'>
                         <p className='text-color-2 uppercase pl-2'>{t('Main.card.card-6.language')}</p>
@@ -176,7 +189,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                 <>
                     <p className='text-color-3 text-3xl font-medium mt-8'><span className='text-color-1 text-3xl'>#</span>{t('Page-projects.small-projects')}</p>
                     <div className='lg: flex flex-col justify-between gap-10 lg:flex-wrap lg:flex-row'>
-                        <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
+                        <div className='w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
                             <div className='w-full h-40 hidden'>
                                 <Image className='lg: w-full lg:h-80' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={333} height={160} />
                             </div>
@@ -197,7 +210,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                             </div>
                         </div>
 
-                        <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
+                        <div className='w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
                             <div className='w-full h-40 hidden'>
                                 <Image className='lg:w-full lg:h-80' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={333} height={160} />
                             </div>
@@ -218,7 +231,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                             </div>
                         </div>
 
-                        <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
+                        <div className='w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
                             <div className='w-full h-40 hidden'>
                                 <Image className='lg:w-full lg:h-80' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={333} height={160} />
                             </div>
@@ -242,7 +255,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
 
                     <p className='text-color-3 text-3xl font-medium mt-8'><span className='text-color-1 text-3xl'>#</span>{t('Page-projects.in-development')}</p>
                     <div className='lg: flex flex-col justify-between gap-10 lg:flex-wrap lg:flex-row'>
-                        <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
+                        <div className='w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
                             <div className='w-full h-40 hidden'>
                                 <Image className='lg: w-full lg:h-80' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={333} height={160} />
                             </div>
@@ -263,7 +276,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                             </div>
                         </div>
 
-                        <div className='border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
+                        <div className='w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
                             <div className='w-full h-40 hidden'>
                                 <Image className='lg:w-full lg:h-80' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={333} height={160} />
                             </div>
@@ -287,6 +300,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                 </>
             )}
         </section>
+     
     );
 };
 

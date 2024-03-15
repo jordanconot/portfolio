@@ -42,10 +42,10 @@ export default function NavBar() {
     return (
         <nav
             className={`flex justify-between lg:sticky lg:top-3 
-            ${scrolled ? 'bg-backgroundColor-white fixed top-0 left-0 right-0 z-40 w-full p-4 lg:rounded lg:mt-4 ' : ''}`}
+            ${scrolled ? 'bg-backgroundColor-white fixed top-0 left-0 right-0 z-40 w-full p-4 lg:rounded lg:mt-4 animate__animated animate__slideInDown' : ''}`}
         >
 
-            <div className='flex items-center gap-4'>
+            <div className='flex items-center gap-4 animate__animated animate__fadeInDown'>
                 {scrolled && (
                     <>
                         <Link className='hover:opacity-50' href='/'>
@@ -64,7 +64,7 @@ export default function NavBar() {
                 </Link>
             </div>
             <div className='flex items-center gap-4'>
-                <div className='hidden lg:flex gap-4 lg:gap-6'>
+                <div className='hidden lg:flex gap-4 lg:gap-6 animate__animated animate__fadeInDown'>
                     {lang === 'fr' && (
                         <button
                             className={`text-base font-bold mr-6 hover:opacity-50 ${scrolled ? 'text-color-4' : 'text-color-3'}`}

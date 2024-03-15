@@ -3,7 +3,6 @@ import { LanguageContext } from '@/app/layout';
 import useTranslation from '@/hooks/useTranslation';
 import React, { useContext } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const Banner = () => {
     const { lang, setLang } = useContext(LanguageContext);
@@ -11,24 +10,24 @@ const Banner = () => {
 
     return (
         <>
-            <header className='mt-12 flex flex-col gap-6 lg:flex-row lg:gap-14 xl:justify-between 2xl:gap-36 2xl:justify-start'>
-                <div className='flex flex-col gap-8  lg:flex lg:flex-col lg:justify-center lg:w-1/2 lg:gap-10'>
-                    <h1 className='text-3xl text-color-3 font-semibold md:text-4xl'>
+            <header className='mt-12 flex flex-col gap-6 lg:flex-row lg:gap-14 lg:mt-36  xl:justify-between 2xl:gap-36 2xl:justify-start'>
+                <div className='flex flex-col gap-8 lg:flex lg:flex-col lg:justify-center lg:w-1/2 lg:gap-10'>
+                    <h1 className='text-3xl text-color-3 font-semibold md:text-4xl animate__animated animate__fadeInLeft animate__delay-1s '>
                         {t('Banner.h1.before')}
                         <span className='text-color-1 md:text-4xl'> {t('Banner.h1.strong')}</span>
                         <span className='text-color-3 md:text-4xl'> {t('Banner.h1.after')}</span>
                         <span className='text-color-1 md:text-4xl'> {t('Banner.h1.highlight-strong')}</span>
                     </h1>
-                    <h2 className='text-base text-color-2 font-normal'>{t('Banner.h2')}</h2>
+                    <h2 className='text-base text-color-2 font-normal animate__animated animate__fadeInLeft animate__delay-2s'>{t('Banner.h2')}</h2>
                     <div>
-                        <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
+                        <button className='text-color-3 border-color-1 border px-4 py-2 uppercase animate__animated animate__fadeInLeft animate__delay-3s'>
                             <a href='mailto:jordan.conot.dev@gmail.com?subject=Demande de renseignement depuis le portfolio 🤗'>
                                 {t('Main.contact.contact-me')}
                             </a>
                         </button>
                     </div>
                 </div>
-                <div className='mt-4 flex w-full  md:items-center lg:w-auto'>
+                <div className='mt-4 flex w-full animate__animated animate__fadeInRight animate__delay-1s   md:items-center lg:w-auto'>
                     <div className='w-full lg:w-auto'>
                         <Image className='md:w-full' src='/assets/img/boy.png' alt='Boy' width={400} height={261} />
                         <div className='p-1 text-center border-color-2 border text-sm'>
@@ -42,7 +41,7 @@ const Banner = () => {
                     </div>
                 </div>
             </header>
-            <div className='p-0 m-0 box-border w-[85%] mx-auto mt-16 hidden lg:block'>
+            <div className='p-0 m-0 box-border w-[85%] mx-auto mt-16 animate__animated animate__zoomInDown animate__delay-1s hidden lg:block'>
                 <fieldset className='border border-color-2 pl-[2%] border-b-0'>
                     <p className='text-2xl text-center text-color-3 p-3 pt-1 font-normal'>{t('Banner.citation')}</p>
                     <legend>

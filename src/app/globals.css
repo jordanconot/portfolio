@@ -13,6 +13,7 @@ body {
   background: #1E1E1E;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 .underline-effect::after {
@@ -37,6 +38,22 @@ body {
   border: 2px solid transparent;
   border-top-color: #0047C3;
   border-radius: 70%;
+}
+
+.translate-to-line {
+  animation: descendToLine 0.5s forwards;
+}
+
+@keyframes descendToLine {
+  to {
+      transform: translateY(100%); /* Descend l'image sous la ligne */
+      opacity: 0; /* Rend l'image transparente */
+  }
+}
+
+.animate__animated {
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 /* Scrollbar */

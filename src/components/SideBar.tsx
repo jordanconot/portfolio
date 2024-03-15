@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function SideBar() {
     return (
-        <div className="hidden fixed top-0 left-0 flex-col justify-center items-center ml-5 md:flex">
+        <div className="hidden fixed top-0 left-0 flex-col justify-center items-center ml-5 md:flex animate__animated animate__fadeInDown animate__delay-3s">
             <div className="w-[1px] h-40 bg-white"></div>
             <div className="flex flex-col justify-center items-center gap-4">
                 <ul className="flex flex-col gap-2">

@@ -16,7 +16,7 @@ export default function Page() {
                 <NavBar />
                 <SideBar />
                 <Hero />
-                <main className='mt-16'>
+                <main className='md:mt-[30vw] lg:mt-[17%] 2xl:mt-[16%]'>
                     <Projects isProjectsPage={false} />
                     <Skills isHomePage={true} isAboutPage={false} />
                     <About isAboutPage={false} />
