@@ -13,9 +13,8 @@ interface AboutProps {
 const About: React.FC<AboutProps> = ({ isAboutPage }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
-    const { ref, inView } = useInView({
-        threshold: 0,
-    });
+    const { ref, inView } = useInView({ threshold: 0 });
+    const [ref2, inView2] = useInView({ threshold: 0.8, triggerOnce: true });
 
     const maskContainerStyles: React.CSSProperties = {
         position: 'relative',
@@ -37,7 +36,7 @@ const About: React.FC<AboutProps> = ({ isAboutPage }) => {
                 <div className='h-[1px] w-[420px] bg-backgroundColor-nav ml-6 hidden lg:block'></div>
             </div>
             <div className='lg:flex lg:flex-row lg:flex-wrap lg:justify-between'>
-                <div className='flex flex-col gap-4 lg:max-w-[50%] lg:gap-6 lg:justify-center 2xl:justify-center'>
+                <div ref={ref2} className={`flex flex-col gap-4 lg:max-w-[50%] lg:gap-6 lg:justify-center 2xl:justify-center animate__animated ${inView2 ? 'animate__fadeIn' : 'opacity-0'}`}>
                     <p className='text-color-3 font-semibold 2xl:text-2xl'>{t('Main.about.text-welcome')}</p>
                     <p className='text-color-2'>{t('Main.about.text')}</p>
                     <p className='text-color-2'>{t('Main.about.text-after')}</p>

@@ -3,6 +3,7 @@ import React, { useContext } from 'react';
 import { LanguageContext } from '@/app/layout';
 import useTranslation from '@/hooks/useTranslation';
 import Image from 'next/image';
+import { useInView } from 'react-intersection-observer';
 
 interface ContactProps {
     isContactPage: boolean,
@@ -12,6 +13,9 @@ interface ContactProps {
 const Contact: React.FC<ContactProps> = ({ isContactPage, isHomePage }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
+    const { ref, inView } = useInView({ threshold: 0, triggerOnce: true });
+    const [ref2, inView2] = useInView({ threshold: 0.2, triggerOnce: true });
+
     return (
         <section className='flex flex-col gap-10 mt-16'>
             <div className='flex items-center'>
@@ -20,7 +24,7 @@ const Contact: React.FC<ContactProps> = ({ isContactPage, isHomePage }) => {
                 <div className='h-[1px] w-[200px] bg-backgroundColor-nav ml-6 hidden lg:block'></div>
             </div>
             <div className='lg:flex lg:flex-row lg:flex-wrap lg:justify-between'>
-                <div className='flex flex-col gap-6 lg:max-w-[50%]'>
+                <div ref={ref} className={`flex flex-col gap-6 lg:max-w-[50%] animate__animated ${inView ? 'animate__fadeIn' : 'opacity-0'} `}>
                     <p className='text-color-2'>{t('Main.contact.text-contact')}</p>
                     {isHomePage && (
                         <p className='text-color-2'>{t('Main.contact.text-contact-after')}</p>
@@ -34,7 +38,7 @@ const Contact: React.FC<ContactProps> = ({ isContactPage, isHomePage }) => {
                         </>
                     )}
                 </div>
-                <div className='border-color-2 border flex mt-6 h-max w-max'>
+                <div ref={ref2} className={`border-color-2 border flex mt-6 h-max w-max animate__animated ${inView2 ? 'animate__jackInTheBox' : 'opacity-0'}`}>
                     <div className='p-4 flex flex-col gap-4'>
                         <p className='text-color-3'>{t('Main.contact.message')}</p>
                         <div className='flex items-center gap-2'>
