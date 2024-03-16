@@ -17,7 +17,7 @@ const Contact: React.FC<ContactProps> = ({ isContactPage, isHomePage }) => {
     const [ref2, inView2] = useInView({ threshold: 0.2, triggerOnce: true });
 
     return (
-        <section className='flex flex-col gap-10 mt-16'>
+        <section className='flex flex-col gap-10 mt-16 lg:mt-36'>
             <div className='flex items-center'>
                 <h2 className='text-color-3 text-3xl font-medium'>
                     <span className='text-color-1 text-3xl'>{isContactPage ? '/' : '#'}</span>{t('Main.contact.contact')}</h2>

@@ -23,7 +23,7 @@ const Menu: React.FC<MenuProps> = ({ closeMenu }) => {
     }, []);
 
     return (
-        <div className='fixed top-0 left-0 w-full h-full flex bg-backgroundColor z-50'>
+        <div className='fixed top-0 left-0 w-full min-h-screen flex bg-backgroundColor z-50'>
             <div className='w-full m-4 relative'>
                 <nav className='flex items-center justify-between'>
                     <div className='flex gap-4'>
