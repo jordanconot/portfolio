@@ -26,7 +26,8 @@ const config: Config = {
         "backgroundColor-nav": "#0047C3",
         "backgroundColor-white": "#FFF",
       },
-      backgroundImage: { 
+      dropShadow: {
+        'white': '0 35px 35px rgba(255, 255, 255, 255)'
       },
     },
   },

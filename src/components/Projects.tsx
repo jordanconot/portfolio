@@ -5,6 +5,7 @@ import { LanguageContext } from '@/app/layout';
 import useTranslation from '@/hooks/useTranslation';
 import Link from 'next/link';
 import { useInView } from 'react-intersection-observer';
+import Btn from './utils/Btn';
 
 interface ProjectsProps {
     isProjectsPage: boolean
@@ -32,7 +33,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
     }
 
     return (
-        
+
         <section className={`flex flex-col gap-10 mt-16 lg:mt-36 `}>
             <div className='flex items-center justify-between'>
                 <h2 className='text-color-3 text-3xl font-medium lg:flex lg:items-center'>
@@ -56,9 +57,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
             )}
 
             <div className='lg: flex flex-wrap justify-between gap-10'>
-
-
-            <div ref={ref1} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView1 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(1) }}>
+                <div ref={ref1} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView1 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(1) }}>
                     <div className='h-60 flex relative'>
                         <Image className='lg:h-60' src='/assets/img/sport-see.jpg' alt='Projet sport see' fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%" />
                     </div>
@@ -69,12 +68,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.title')}</p>
                         <p className='text-color-2'>{t('Main.card.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                {t('Main.btn-live')} {arrow}
-                            </button>
-                            <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                {t('Main.btn-github')} {arrow}
-                            </button>
+                            <Btn textKey='Main.btn-live' link='' showArrow />
+                            <Btn textKey='Main.btn-github' link='' showArrow />
                         </div>
                     </div>
                 </div>
@@ -90,12 +85,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-2.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-2.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                {t('Main.btn-live')} {arrow}
-                            </button>
-                            <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                {t('Main.btn-github')} {arrow}
-                            </button>
+                            <Btn textKey='Main.btn-live' link='' showArrow />
+                            <Btn textKey='Main.btn-github' link='' showArrow />
                         </div>
                     </div>
                 </div>
@@ -111,16 +102,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-3.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-3.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <Link href='https://jordanconot.github.io/les-petits-plats/' target='_blank'>
-                                <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                    {t('Main.btn-live')} {arrow}
-                                </button>
-                            </Link>
-                            <Link href='https://github.com/jordanconot/les-petits-plats' target='_blank'>
-                                <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                    {t('Main.btn-github')} {arrow}
-                                </button>
-                            </Link>
+                            <Btn textKey='Main.btn-live' link='' showArrow />
+                            <Btn textKey='Main.btn-github' link='' showArrow />
                         </div>
                     </div>
                 </div>
@@ -136,12 +119,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-4.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-4.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                {t('Main.btn-live')} {arrow}
-                            </button>
-                            <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                {t('Main.btn-github')} {arrow}
-                            </button>
+                            <Btn textKey='Main.btn-live' link='' showArrow />
+                            <Btn textKey='Main.btn-github' link='' showArrow />
                         </div>
                     </div>
                 </div>
@@ -157,19 +136,15 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-5.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-5.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                {t('Main.btn-live')} {arrow}
-                            </button>
-                            <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                {t('Main.btn-github')} {arrow}
-                            </button>
+                            <Btn textKey='Main.btn-live' link='' showArrow />
+                            <Btn textKey='Main.btn-github' link='' showArrow />
                         </div>
                     </div>
                 </div>
 
                 <div ref={ref6} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView6 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(6) }}>
                     <div className='h-60 flex relative'>
-                        <Image className='lg:h-60' src='/assets/img/reservia.png' alt='Projet Réservia' fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%"  />
+                        <Image className='lg:h-60' src='/assets/img/reservia.png' alt='Projet Réservia' fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%" />
                     </div>
                     <div className='border-color-2 border flex p-2 border-x-0'>
                         <p className='text-color-2 uppercase pl-2'>{t('Main.card.card-6.language')}</p>
@@ -178,12 +153,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-6.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-6.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                {t('Main.btn-live')} {arrow}
-                            </button>
-                            <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                {t('Main.btn-github')} {arrow}
-                            </button>
+                            <Btn textKey='Main.btn-live' link='' showArrow />
+                            <Btn textKey='Main.btn-github' link='' showArrow />
                         </div>
                     </div>
                 </div>
@@ -205,12 +176,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                                 <p className='uppercase text-color-3 text-2xl font-medium'>{t('Page-projects.card-1.title')}</p>
                                 <p className='text-color-2'>{t('Page-projects.card-1.description')}</p>
                                 <div className='flex flex-row gap-4'>
-                                    <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                        {t('Main.btn-live')} {arrow}
-                                    </button>
-                                    <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                        {t('Main.btn-github')} {arrow}
-                                    </button>
+                                    <Btn textKey='Main.btn-live' link='' showArrow />
+                                    <Btn textKey='Main.btn-github' link='' showArrow />
                                 </div>
                             </div>
                         </div>
@@ -226,12 +193,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                                 <p className='uppercase text-color-3 text-2xl font-medium'>{t('Page-projects.card-2.title')}</p>
                                 <p className='text-color-2'>{t('Page-projects.card-2.description')}</p>
                                 <div className='flex flex-row gap-4'>
-                                    <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                        {t('Main.btn-live')} {arrow}
-                                    </button>
-                                    <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                        {t('Main.btn-github')} {arrow}
-                                    </button>
+                                    <Btn textKey='Main.btn-live' link='' showArrow />
+                                    <Btn textKey='Main.btn-github' link='' showArrow />
                                 </div>
                             </div>
                         </div>
@@ -247,12 +210,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                                 <p className='uppercase text-color-3 text-2xl font-medium'>{t('Page-projects.card-3.title')}</p>
                                 <p className='text-color-2'>{t('Page-projects.card-3.description')}</p>
                                 <div className='flex flex-row gap-4'>
-                                    <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                        {t('Main.btn-live')} {arrow}
-                                    </button>
-                                    <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                        {t('Main.btn-github')} {arrow}
-                                    </button>
+                                    <Btn textKey='Main.btn-live' link='' showArrow />
+                                    <Btn textKey='Main.btn-github' link='' showArrow />
                                 </div>
                             </div>
                         </div>
@@ -260,7 +219,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
 
                     <p className='text-color-3 text-3xl font-medium mt-8'><span className='text-color-1 text-3xl'>#</span>{t('Page-projects.in-development')}</p>
                     <div className='lg: flex flex-col justify-between gap-10 lg:flex-wrap lg:flex-row'>
-                    <div ref={ref10} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView10 ? 'animate__fadeIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(10) }}>
+                        <div ref={ref10} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView10 ? 'animate__fadeIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(10) }}>
                             <div className='w-full h-40 hidden'>
                                 <Image className='lg: w-full lg:h-80' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={333} height={160} />
                             </div>
@@ -271,12 +230,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                                 <p className='uppercase text-color-3 text-2xl font-medium'>{t('Page-projects.card-in-dev-1.title')}</p>
                                 <p className='text-color-2'>{t('Page-projects.card-in-dev-1.description')}</p>
                                 <div className='flex flex-row gap-4'>
-                                    <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                        {t('Main.btn-live')} {arrow}
-                                    </button>
-                                    <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                        {t('Main.btn-github')} {arrow}
-                                    </button>
+                                    <Btn textKey='Main.btn-live' link='' showArrow />
+                                    <Btn textKey='Main.btn-github' link='' showArrow />
                                 </div>
                             </div>
                         </div>
@@ -292,12 +247,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                                 <p className='uppercase text-color-3 text-2xl font-medium'>{t('Page-projects.card-in-dev-2.title')}</p>
                                 <p className='text-color-2'>{t('Page-projects.card-in-dev-2.description')}</p>
                                 <div className='flex flex-row gap-4'>
-                                    <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                        {t('Main.btn-live')} {arrow}
-                                    </button>
-                                    <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                                        {t('Main.btn-github')} {arrow}
-                                    </button>
+                                    <Btn textKey='Main.btn-live' link='' showArrow />
+                                    <Btn textKey='Main.btn-github' link='' showArrow />
                                 </div>
                             </div>
                         </div>
@@ -305,7 +256,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                 </>
             )}
         </section>
-     
+
     );
 };
 

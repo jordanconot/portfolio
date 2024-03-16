@@ -5,6 +5,7 @@ import useTranslation from '@/hooks/useTranslation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useInView } from 'react-intersection-observer';
+import Btn from './utils/Btn';
 
 interface AboutProps {
     isAboutPage: boolean,
@@ -44,13 +45,9 @@ const About: React.FC<AboutProps> = ({ isAboutPage }) => {
                         <span className='text-color-2'>{t('Page-about.text')}</span>
                     )}
                     <div>
-                        <button className='text-color-3 border-color-1 border px-4 py-2 uppercase'>
-                            <Link href={`${isAboutPage ? 'mailto:jordan.conot.dev@gmail.com?subject=Demande de renseignement depuis le portfolio 🤗' : '/a-propos'}`}>
-                                {isAboutPage ? t('Main.contact.contact-me') : t('Main.about.more')}
-                            </Link>
-                        </button>
+                        <Btn link={`${isAboutPage ? 'mailto:jordan.conot.dev@gmail.com?subject=Demande de renseignement depuis le portfolio 🤗' : '/a-propos'}`} textKey={`${isAboutPage ? 'Main.contact.contact-me' : 'Main.about.more'}`}
+                        />
                     </div>
-
                 </div>
                 <div style={maskContainerStyles}>
                     <div ref={ref} className='z-10 mt-8 flex-col flex items-center md:justify-end lg:justify-center sticky top-[50vh]' style={imageStyles}>

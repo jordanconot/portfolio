@@ -3,6 +3,7 @@ import { LanguageContext } from '@/app/layout';
 import useTranslation from '@/hooks/useTranslation';
 import React, { useContext } from 'react';
 import Image from 'next/image';
+import Btn from './utils/Btn';
 
 const Banner = () => {
     const { lang, setLang } = useContext(LanguageContext);
@@ -19,12 +20,8 @@ const Banner = () => {
                         <span className='text-color-1 md:text-4xl'> {t('Banner.h1.highlight-strong')}</span>
                     </h1>
                     <h2 className='text-base text-color-2 font-normal animate__animated animate__fadeInLeft animate__delay-2s'>{t('Banner.h2')}</h2>
-                    <div>
-                        <button className='text-color-3 border-color-1 border px-4 py-2 uppercase animate__animated animate__fadeInLeft animate__delay-3s'>
-                            <a href='mailto:jordan.conot.dev@gmail.com?subject=Demande de renseignement depuis le portfolio 🤗'>
-                                {t('Main.contact.contact-me')}
-                            </a>
-                        </button>
+                    <div className='animate__animated animate__fadeInLeft animate__delay-3s'>
+                        <Btn  textKey='Main.contact.contact-me' link='mailto:jordan.conot.dev@gmail.com?subject=Demande de renseignement depuis le portfolio 🤗' />
                     </div>
                 </div>
                 <div className='mt-4 flex w-full animate__animated animate__fadeInRight animate__delay-1s   md:items-center lg:w-auto'>
