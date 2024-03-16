@@ -9,9 +9,9 @@
     "Banner": {
         "h1": {
             "before": "Je suis",
-            "strong": "web designer",
+            "strong": "développeur d'applications",
             "after": "&",
-            "highlight-strong": "front-end développeur"
+            "highlight-strong": "développeur front-end"
         },
         "h2": "Je crée des sites web réactifs où la technologie rencontre la créativité",
         "btn-contact": "Contactez-moi !",

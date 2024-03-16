@@ -68,8 +68,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.title')}</p>
                         <p className='text-color-2'>{t('Main.card.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <Btn textKey='Main.btn-live' link='' showArrow />
-                            <Btn textKey='Main.btn-github' link='' showArrow />
+                            <Btn textKey='Main.btn-live' link='https://sport-see-pi.vercel.app' showArrow />
+                            <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/sport-see/tree/main' showArrow />
                         </div>
                     </div>
                 </div>
@@ -85,8 +85,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-2.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-2.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <Btn textKey='Main.btn-live' link='' showArrow />
-                            <Btn textKey='Main.btn-github' link='' showArrow />
+                            <Btn textKey='Main.btn-live' link='https://kasa-indol.vercel.app' showArrow />
+                            <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/kasa/tree/main' showArrow />
                         </div>
                     </div>
                 </div>
@@ -102,8 +102,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-3.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-3.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <Btn textKey='Main.btn-live' link='' showArrow />
-                            <Btn textKey='Main.btn-github' link='' showArrow />
+                            <Btn textKey='Main.btn-live' link='https://jordanconot.github.io/les-petits-plats/' showArrow />
+                            <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/les-petits-plats' showArrow />
                         </div>
                     </div>
                 </div>
@@ -119,8 +119,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-4.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-4.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <Btn textKey='Main.btn-live' link='' showArrow />
-                            <Btn textKey='Main.btn-github' link='' showArrow />
+                            <Btn textKey='Main.btn-live' link='https://jordanconot.github.io/Conotjordan_P3_01082021' showArrow />
+                            <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/Conotjordan_P3_01082021' showArrow />
                         </div>
                     </div>
                 </div>
@@ -136,8 +136,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-5.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-5.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <Btn textKey='Main.btn-live' link='' showArrow />
-                            <Btn textKey='Main.btn-github' link='' showArrow />
+                            <Btn textKey='Main.btn-live' link='https://fisheye-delta.vercel.app/' showArrow />
+                            <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/fisheye' showArrow />
                         </div>
                     </div>
                 </div>
@@ -153,8 +153,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-6.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-6.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <Btn textKey='Main.btn-live' link='' showArrow />
-                            <Btn textKey='Main.btn-github' link='' showArrow />
+                            <Btn textKey='Main.btn-live' link='https://jordanconot.github.io/Conotjordan_P2_01072021' showArrow />
+                            <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/Conotjordan_P2_01072021' showArrow />
                         </div>
                     </div>
                 </div>
@@ -176,8 +176,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                                 <p className='uppercase text-color-3 text-2xl font-medium'>{t('Page-projects.card-1.title')}</p>
                                 <p className='text-color-2'>{t('Page-projects.card-1.description')}</p>
                                 <div className='flex flex-row gap-4'>
-                                    <Btn textKey='Main.btn-live' link='' showArrow />
-                                    <Btn textKey='Main.btn-github' link='' showArrow />
+                                    <Btn textKey='Main.btn-live' link='https://jordanconot.github.io/GameOn-website-FR/starterOnly/index.html' showArrow />
+                                    <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/GameOn-website-FR' showArrow />
                                 </div>
                             </div>
                         </div>
@@ -193,13 +193,13 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                                 <p className='uppercase text-color-3 text-2xl font-medium'>{t('Page-projects.card-2.title')}</p>
                                 <p className='text-color-2'>{t('Page-projects.card-2.description')}</p>
                                 <div className='flex flex-row gap-4'>
-                                    <Btn textKey='Main.btn-live' link='' showArrow />
-                                    <Btn textKey='Main.btn-github' link='' showArrow />
+                                    <Btn textKey='Main.btn-live' link='https://github.com/jordanconot/billed-app' showArrow />
+                                    <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/billed-app' showArrow />
                                 </div>
                             </div>
                         </div>
 
-                        <div ref={ref9} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView9 ? 'animate__fadeInLeft' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(9) }}>
+                        {/* <div ref={ref9} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView9 ? 'animate__fadeInLeft' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(9) }}>
                             <div className='w-full h-40 hidden'>
                                 <Image className='lg:w-full lg:h-80' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={333} height={160} />
                             </div>
@@ -214,7 +214,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                                     <Btn textKey='Main.btn-github' link='' showArrow />
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     <p className='text-color-3 text-3xl font-medium mt-8'><span className='text-color-1 text-3xl'>#</span>{t('Page-projects.in-development')}</p>
@@ -230,8 +230,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                                 <p className='uppercase text-color-3 text-2xl font-medium'>{t('Page-projects.card-in-dev-1.title')}</p>
                                 <p className='text-color-2'>{t('Page-projects.card-in-dev-1.description')}</p>
                                 <div className='flex flex-row gap-4'>
-                                    <Btn textKey='Main.btn-live' link='' showArrow />
-                                    <Btn textKey='Main.btn-github' link='' showArrow />
+                                    {/* <Btn textKey='Main.btn-live' link='' showArrow />
+                                    <Btn textKey='Main.btn-github' link='' showArrow /> */}
                                 </div>
                             </div>
                         </div>
@@ -247,8 +247,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                                 <p className='uppercase text-color-3 text-2xl font-medium'>{t('Page-projects.card-in-dev-2.title')}</p>
                                 <p className='text-color-2'>{t('Page-projects.card-in-dev-2.description')}</p>
                                 <div className='flex flex-row gap-4'>
-                                    <Btn textKey='Main.btn-live' link='' showArrow />
-                                    <Btn textKey='Main.btn-github' link='' showArrow />
+                                    {/* <Btn textKey='Main.btn-live' link='' showArrow />
+                                    <Btn textKey='Main.btn-github' link='' showArrow /> */}
                                 </div>
                             </div>
                         </div>

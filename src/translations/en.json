@@ -8,8 +8,8 @@
     },
     "Banner": {
         "h1": {
-            "before": "Im a",
-            "strong": "web designer",
+            "before": "I am an",
+            "strong": "application developer",
             "after": "&",
             "highlight-strong": "front-end developer"
         },
