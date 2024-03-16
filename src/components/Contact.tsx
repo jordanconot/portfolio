@@ -13,7 +13,7 @@ interface ContactProps {
 const Contact: React.FC<ContactProps> = ({ isContactPage, isHomePage }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
-    const { ref, inView } = useInView({ threshold: 0, triggerOnce: true });
+    const { ref, inView } = useInView({ threshold: 0 });
     const [ref2, inView2] = useInView({ threshold: 0.2, triggerOnce: true });
 
     return (

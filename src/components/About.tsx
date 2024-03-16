@@ -14,7 +14,7 @@ const About: React.FC<AboutProps> = ({ isAboutPage }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
     const { ref, inView } = useInView({ threshold: 0 });
-    const [ref2, inView2] = useInView({ threshold: 0.8, triggerOnce: true });
+    const [ref2, inView2] = useInView({ threshold: 0.8 });
 
     const maskContainerStyles: React.CSSProperties = {
         position: 'relative',
@@ -29,7 +29,7 @@ const About: React.FC<AboutProps> = ({ isAboutPage }) => {
         zIndex: 10,
     };
     return (
-        <section className='flex flex-col gap-10 mt-16 relative'>
+        <section className='flex flex-col gap-10 mt-16 lg:mt-36 relative'>
             <div className='flex items-center'>
                 <h2 className='text-color-3 text-3xl font-medium'><span className='text-color-1 text-3xl'>
                     {isAboutPage ? '/' : '#'}</span>{t('Main.about.about')}</h2>
@@ -56,7 +56,7 @@ const About: React.FC<AboutProps> = ({ isAboutPage }) => {
                     <div ref={ref} className='z-10 mt-8 flex-col flex items-center md:justify-end lg:justify-center sticky top-[50vh]' style={imageStyles}>
                         <Image src='/assets/img/about-me.webp' alt='Boy' width={339} height={507} />
                     </div>
-                    <div className='h-[1px] w-[80%] bg-backgroundColor-nav  absolute bottom-0 left-0 z-20 md:w-[60%] lg:w-full'></div>
+                    <div className='h-[1px] w-full bg-backgroundColor-nav absolute bottom-0 left-0 z-20 lg:w-full'></div>
                 </div>
             </div>
         </section>

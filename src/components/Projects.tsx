@@ -15,20 +15,25 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
     const { t } = useTranslation(lang);
     const arrow = `~~>`;
 
-    const [ref1, inView1] = useInView({ threshold: 0.1, triggerOnce: true });
-    const [ref2, inView2] = useInView({ threshold: 0.1, triggerOnce: true });
-    const [ref3, inView3] = useInView({ threshold: 0.1, triggerOnce: true });
-    const [ref4, inView4] = useInView({ threshold: 0.1, triggerOnce: true });
-    const [ref5, inView5] = useInView({ threshold: 0.1, triggerOnce: true });
-    const [ref6, inView6] = useInView({ threshold: 0.1, triggerOnce: true });
+    const [ref1, inView1] = useInView({ threshold: 0.1 });
+    const [ref2, inView2] = useInView({ threshold: 0.1 });
+    const [ref3, inView3] = useInView({ threshold: 0.1 });
+    const [ref4, inView4] = useInView({ threshold: 0.1 });
+    const [ref5, inView5] = useInView({ threshold: 0.1 });
+    const [ref6, inView6] = useInView({ threshold: 0.1 });
+    const [ref7, inView7] = useInView({ threshold: 0 });
+    const [ref8, inView8] = useInView({ threshold: 0 });
+    const [ref9, inView9] = useInView({ threshold: 0 });
+    const [ref10, inView10] = useInView({ threshold: 0 });
+    const [ref11, inView11] = useInView({ threshold: 0 });
 
     const calculateDelay = (index: number) => {
-        return `${index * 200}ms`;
+        return `${index * 50}ms`;
     }
 
     return (
         
-        <section className={`flex flex-col gap-10 mt-16 `}>
+        <section className={`flex flex-col gap-10 mt-16 lg:mt-36 `}>
             <div className='flex items-center justify-between'>
                 <h2 className='text-color-3 text-3xl font-medium lg:flex lg:items-center'>
                     <span className='text-color-1 text-3xl'>{isProjectsPage ? '/' : '#'}</span>{t('Main.h2')}
@@ -189,7 +194,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                 <>
                     <p className='text-color-3 text-3xl font-medium mt-8'><span className='text-color-1 text-3xl'>#</span>{t('Page-projects.small-projects')}</p>
                     <div className='lg: flex flex-col justify-between gap-10 lg:flex-wrap lg:flex-row'>
-                        <div className='w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
+                        <div ref={ref7} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView7 ? 'animate__fadeInLeft' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(7) }}>
                             <div className='w-full h-40 hidden'>
                                 <Image className='lg: w-full lg:h-80' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={333} height={160} />
                             </div>
@@ -210,7 +215,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                             </div>
                         </div>
 
-                        <div className='w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
+                        <div ref={ref8} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView8 ? 'animate__fadeInLeft' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(8) }}>
                             <div className='w-full h-40 hidden'>
                                 <Image className='lg:w-full lg:h-80' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={333} height={160} />
                             </div>
@@ -231,7 +236,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                             </div>
                         </div>
 
-                        <div className='w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
+                        <div ref={ref9} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView9 ? 'animate__fadeInLeft' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(9) }}>
                             <div className='w-full h-40 hidden'>
                                 <Image className='lg:w-full lg:h-80' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={333} height={160} />
                             </div>
@@ -255,7 +260,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
 
                     <p className='text-color-3 text-3xl font-medium mt-8'><span className='text-color-1 text-3xl'>#</span>{t('Page-projects.in-development')}</p>
                     <div className='lg: flex flex-col justify-between gap-10 lg:flex-wrap lg:flex-row'>
-                        <div className='w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
+                    <div ref={ref10} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView10 ? 'animate__fadeIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(10) }}>
                             <div className='w-full h-40 hidden'>
                                 <Image className='lg: w-full lg:h-80' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={333} height={160} />
                             </div>
@@ -276,7 +281,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                             </div>
                         </div>
 
-                        <div className='w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%]'>
+                        <div ref={ref11} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView11 ? 'animate__fadeIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(11) }}>
                             <div className='w-full h-40 hidden'>
                                 <Image className='lg:w-full lg:h-80' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={333} height={160} />
                             </div>
