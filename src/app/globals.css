@@ -144,13 +144,17 @@ body {
   animation: descendToLine 0.5s forwards;
 }
 
+.width-contact {
+  width: 10.4rem;
+}
+
 .container-btn {
   cursor: pointer;
   display: flex;
   height: 3.3125rem;
   justify-content: center;
   position: relative;
-  width: 9.4rem;
+  width: 7.4rem;
   align-items: center;
 }
 
@@ -175,8 +179,7 @@ body {
   text-transform: uppercase;
   z-index: 2;
   color: white;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 600;
 }
 
 .container-btn::after {

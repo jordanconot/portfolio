@@ -21,7 +21,7 @@ const Banner = () => {
                     </h1>
                     <h2 className='text-base text-color-2 font-normal animate__animated animate__fadeInLeft animate__delay-2s'>{t('Banner.h2')}</h2>
                     <div className='animate__animated animate__fadeInLeft animate__delay-3s max-w-max'>
-                        <Btn  textKey='Main.contact.contact-me' link='mailto:jordan.conot.dev@gmail.com?subject=Demande de renseignement depuis le portfolio 🤗' />
+                        <Btn width='10.5rem' textKey='Main.contact.contact-me' link='mailto:jordan.conot.dev@gmail.com?subject=Demande de renseignement depuis le portfolio 🤗' />
                     </div>
                 </div>
                 <div className='mt-4 flex w-full animate__animated animate__fadeInRight animate__delay-1s   md:items-center lg:w-auto'>
