@@ -11,6 +11,7 @@ interface AboutProps {
     isAboutPage: boolean,
 }
 
+
 const About: React.FC<AboutProps> = ({ isAboutPage }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);

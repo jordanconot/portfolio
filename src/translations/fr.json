@@ -4,7 +4,11 @@
         "home": "Accueil",
         "projects": "Projets",
         "about": "À propos",
-        "contact": "Contact"
+        "contact": "Contact",
+        "key-home": "a",
+        "key-projet": "p",
+        "key-about": "à",
+        "key-contact": "c"
     },
     "Banner": {
         "h1": {

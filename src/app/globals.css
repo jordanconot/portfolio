@@ -16,6 +16,97 @@ body {
   overflow-x: hidden;
 }
 
+.container-key {
+  cursor: pointer;
+  display: flex;
+  height: 2.3125rem;
+  justify-content: center;
+  position: relative;
+  width: 2.6875rem;
+  align-items: center;
+}
+.key {
+  align-items: center;
+    display: flex;
+    gap: 0.625rem;
+    justify-content: center;
+    position: relative;
+    transform: translate3d(-3px, -3px, 0);
+    z-index: 2;
+    transition: transform 0.1s ease;
+}
+.container-key:hover .key {
+  transform: translate3d(-1px, -1px, 0);
+}
+
+.key-letter {
+    letter-spacing: -.01em;
+    position: relative;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    z-index: 2;
+    color: white;
+    font-weight: 700;
+}
+.container-key::after {
+  content: '';
+  background-color: #222;
+  border-radius: 0.4375rem;
+  left: 0;
+  position: absolute;
+  border: 1px solid white;
+  height: calc(100% - 3px);
+  top: -0.125rem;
+  width: calc(100% - 4px);
+  transition: top 0.1s ease, left 0.1s ease;
+}
+
+.container-key:hover::after {
+  top: -0.0625rem;
+  left: 0.0625rem;
+}
+
+.container-key::before {
+  content: "";
+  border-radius: 0.4375rem;
+  left: 0;
+  position: absolute;
+  border: 1px solid white;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  background-color: #222;
+  transition: top 0.1s ease, left 0.1s ease;
+}
+
+.container-key:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.container-key.active::before,
+.container-key.active::after {
+  background-color: #0047C3;
+}
+
+.container-key.active .key,
+.container-key:not(.active):hover .key {
+  transform: translate3d(-1px, -1px, 0);
+}
+
+.container-key.active::after,
+.container-key:not(.active):hover::after {
+  top: -0.0625rem;
+  left: 0.0625rem;
+}
+
+.container-key.active::before,
+.container-key:not(.active):hover::before {
+  top: 0;
+  left: 0;
+}
+
+
 .no-scroll {
   overflow: hidden;
 }
