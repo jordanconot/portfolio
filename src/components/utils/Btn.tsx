@@ -9,8 +9,6 @@ interface BtnProps {
     width?: string;
 };
 
-
-
 const Btn: React.FC<BtnProps> = ({ textKey, link, showArrow, width }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
@@ -18,7 +16,7 @@ const Btn: React.FC<BtnProps> = ({ textKey, link, showArrow, width }) => {
 
     const btnStyle: React.CSSProperties = {};
     if (width) {
-      btnStyle.width = width;
+        btnStyle.width = width;
     }
     return (
         <a href={link} target="_blank" rel="noopener noreferrer">

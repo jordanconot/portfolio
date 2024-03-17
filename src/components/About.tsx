@@ -45,8 +45,8 @@ const About: React.FC<AboutProps> = ({ isAboutPage }) => {
                     {isAboutPage && (
                         <span className='text-color-2'>{t('Page-about.text')}</span>
                     )}
-                    <div>
-                        <Btn link={`${isAboutPage ? 'mailto:jordan.conot.dev@gmail.com?subject=Demande de renseignement depuis le portfolio 🤗' : '/a-propos'}`} textKey={`${isAboutPage ? 'Main.contact.contact-me' : 'Main.about.more'}`}
+                    <div className='max-w-min'>
+                        <Btn width='10.5rem' link={`${isAboutPage ? 'mailto:jordan.conot.dev@gmail.com?subject=Demande de renseignement depuis le portfolio 🤗' : '/a-propos'}`} textKey={`${isAboutPage ? 'Main.contact.contact-me' : 'Main.about.more'}`}
                         />
                     </div>
                 </div>
