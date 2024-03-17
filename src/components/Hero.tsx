@@ -20,7 +20,7 @@ const Banner = () => {
                         <span className='text-color-1 md:text-4xl'> {t('Banner.h1.highlight-strong')}</span>
                     </h1>
                     <h2 className='text-base text-color-2 font-normal animate__animated animate__fadeInLeft animate__delay-2s'>{t('Banner.h2')}</h2>
-                    <div className='animate__animated animate__fadeInLeft animate__delay-3s'>
+                    <div className='animate__animated animate__fadeInLeft animate__delay-3s max-w-max'>
                         <Btn  textKey='Main.contact.contact-me' link='mailto:jordan.conot.dev@gmail.com?subject=Demande de renseignement depuis le portfolio 🤗' />
                     </div>
                 </div>

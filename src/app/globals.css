@@ -25,29 +25,32 @@ body {
   width: 2.6875rem;
   align-items: center;
 }
+
 .key {
   align-items: center;
-    display: flex;
-    gap: 0.625rem;
-    justify-content: center;
-    position: relative;
-    transform: translate3d(-3px, -3px, 0);
-    z-index: 2;
-    transition: transform 0.1s ease;
+  display: flex;
+  gap: 0.625rem;
+  justify-content: center;
+  position: relative;
+  transform: translate3d(-3px, -3px, 0);
+  z-index: 2;
+  transition: transform 0.1s ease;
 }
+
 .container-key:hover .key {
   transform: translate3d(-1px, -1px, 0);
 }
 
 .key-letter {
-    letter-spacing: -.01em;
-    position: relative;
-    text-decoration-line: underline;
-    text-transform: uppercase;
-    z-index: 2;
-    color: white;
-    font-weight: 700;
+  letter-spacing: -.01em;
+  position: relative;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  z-index: 2;
+  color: white;
+  font-weight: 700;
 }
+
 .container-key::after {
   content: '';
   background-color: #222;
@@ -107,6 +110,8 @@ body {
 }
 
 
+
+
 .no-scroll {
   overflow: hidden;
 }
@@ -139,10 +144,84 @@ body {
   animation: descendToLine 0.5s forwards;
 }
 
+.container-btn {
+  cursor: pointer;
+  display: flex;
+  height: 3.3125rem;
+  justify-content: center;
+  position: relative;
+  width: 9.4rem;
+  align-items: center;
+}
+
+.btn {
+  align-items: center;
+  display: flex;
+  gap: 0.625rem;
+  justify-content: center;
+  position: relative;
+  transform: translate3d(-3px, -3px, 0);
+  z-index: 2;
+  transition: transform 0.1s ease;
+}
+
+.container-btn:hover .btn {
+  transform: translate3d(-1px, -1px, 0);
+}
+
+.btn-text {
+  letter-spacing: -.01em;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 2;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.container-btn::after {
+  content: '';
+  border-radius: 0.4375rem;
+  left: 0;
+  position: absolute;
+  border: 1px solid #ABB2BF;
+  height: calc(100% - 3px);
+  top: -0.125rem;
+  width: calc(100% - 4px);
+  transition: top 0.1s ease, left 0.1s ease;
+}
+
+.container-btn:hover::after {
+  top: -0.0625rem;
+  left: 0.0625rem;
+  background-color: #0047C3;
+}
+
+.container-btn::before {
+  content: "";
+  border-radius: 0.4375rem;
+  left: 0;
+  position: absolute;
+  border: 1px solid #ABB2BF;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  background-color: #222;
+  transition: top 0.1s ease, left 0.1s ease;
+}
+
+.container-btn:hover::before {
+  top: 0;
+  left: 0;
+  background-color: #0047C3;
+}
+
 @keyframes descendToLine {
   to {
-      transform: translateY(100%); /* Descend l'image sous la ligne */
-      opacity: 0; /* Rend l'image transparente */
+    transform: translateY(100%);
+    /* Descend l'image sous la ligne */
+    opacity: 0;
+    /* Rend l'image transparente */
   }
 }
 

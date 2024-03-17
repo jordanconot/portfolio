@@ -52,7 +52,7 @@ const Menu: React.FC<MenuProps> = ({ closeMenu }) => {
                             <span className='text-color-1 text-4xl font-medium'>#</span>{t('Nav.contact')}</Link>
                     </ul>
                 </div>
-                <div className='absolute bottom-0 flex w-full justify-center'>
+                <div className='absolute bottom-0 flex w-full justify-center mb-14'>
                     <div className='flex gap-4'>
                         <Image src='/assets/svg/icon-github.svg' alt='logo' width={64} height={64} />
                         <Image src='/assets/svg/icon-linkedin.svg' alt='Email' width={64} height={64} />
