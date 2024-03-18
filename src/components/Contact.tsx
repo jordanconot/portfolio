@@ -44,13 +44,13 @@ const Contact: React.FC<ContactProps> = ({ isContactPage, isHomePage }) => {
                         <div className='flex items-center gap-2'>
                             <a className='flex items-center gap-2' href='mailto:jordan.conot.dev@gmail.com?subject=Demande de renseignement depuis le portfolio 🤗'>
                                 <Image src='/assets/svg/icon-email.svg' alt='Email' width={32} height={32} />
-                                <p className='text-color-2 hover:opacity-50'>{t('Main.contact.email')}</p>
+                                <p className='text-color-2 text-xs hover:opacity-50'>{t('Main.contact.email')}</p>
                             </a>
                         </div>
                         <div className='flex items-center gap-2'>
                             <a className='flex items-center gap-2' href='https://www.linkedin.com/in/jordanconot/' target='_blank'>
                                 <Image src='/assets/svg/icon-linkedin.svg' alt='Email' width={32} height={32} />
-                                <p className='text-color-2 hover:opacity-50'>{t('Main.contact.linkedin')}</p>
+                                <p className='text-color-2 text-xs hover:opacity-50'>{t('Main.contact.linkedin')}</p>
                             </a>
                         </div>
                     </div>
