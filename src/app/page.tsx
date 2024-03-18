@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, { useEffect, useState } from 'react';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -7,8 +8,19 @@ import NavBar from '@/components/NavBar';
 import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
 import SideBar from '@/components/SideBar';
+import Loader from '@/components/loader/Loader';
 
 export default function Page() {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setLoading(false), 2200);
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (loading) {
+        return <Loader />;
+    }
 
     return (
         <>
