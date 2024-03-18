@@ -16,7 +16,7 @@ const About: React.FC<AboutProps> = ({ isAboutPage }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
     const { ref, inView } = useInView({ threshold: 0 });
-    const [ref2, inView2] = useInView({ threshold: 0.8 });
+    const [ref2, inView2] = useInView({ threshold: 0.2 });
 
     const maskContainerStyles: React.CSSProperties = {
         position: 'relative',

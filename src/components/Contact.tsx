@@ -38,7 +38,7 @@ const Contact: React.FC<ContactProps> = ({ isContactPage, isHomePage }) => {
                         </>
                     )}
                 </div>
-                <div ref={ref2} className={`border-color-2 border flex mt-6 h-max w-max animate__animated ${inView2 ? 'animate__jackInTheBox' : 'opacity-0'}`}>
+                <div ref={ref2} className={`border-color-2 border flex mt-6 h-max w-fit animate__animated ${inView2 ? 'animate__jackInTheBox' : 'opacity-0'}`}>
                     <div className='p-4 flex flex-col gap-4'>
                         <p className='text-color-3'>{t('Main.contact.message')}</p>
                         <div className='flex items-center gap-2'>
