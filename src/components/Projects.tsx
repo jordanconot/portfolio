@@ -102,8 +102,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-3.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-3.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <Btn textKey='Main.btn-live' link='https://jordanconot.github.io/les-petits-plats/' showArrow />
-                            <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/les-petits-plats' showArrow />
+                            <Btn textKey='Main.btn-live' link='https://jordanconot.github.io/Les-petits-plats-demo' showArrow />
+                            <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/Les-petits-plats-demo' showArrow />
                         </div>
                     </div>
                 </div>
