@@ -1,9 +1,9 @@
 'use client'
-import React, { useContext } from 'react';
-import Image from 'next/image';
 import { LanguageContext } from '@/app/layout';
 import useTranslation from '@/hooks/useTranslation';
+import Image from 'next/image';
 import Link from 'next/link';
+import React, { useContext } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Btn from './utils/Btn';
 
@@ -68,8 +68,8 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.title')}</p>
                         <p className='text-color-2'>{t('Main.card.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <Btn textKey='Main.btn-live' link='https://sport-see-pi.vercel.app' showArrow />
-                            <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/sport-see/tree/main' showArrow />
+                            <Btn textKey='Main.btn-live' link='https://sport-see-demo-tzv7.vercel.app' showArrow />
+                            <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/Sport-see-demo' showArrow />
                         </div>
                     </div>
                 </div>
