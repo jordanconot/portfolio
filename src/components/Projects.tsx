@@ -34,20 +34,27 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
     }
 
     const handlePlayVideo = () => {
+        console.log('handlePlayVideo called'); 
         const videoElement = document.getElementById('video-croissant') as HTMLVideoElement;
         if (videoElement) {
+            console.log('Video element found');
             videoElement.muted = true;
             videoElement.play();
             setVideoVisible(true);
             if (videoElement.requestFullscreen) {
                 videoElement.requestFullscreen();
+            } else {
+                console.log('Fullscreen API not supported');
             }
+        } else {
+            console.log('Video element not found')
         }
     };
 
     useEffect(() => {
         const handleFullscreenChange = () => {
             if (!document.fullscreenElement) {
+                console.log('Exiting fullscreen mode');
                 setVideoVisible(false);
             }
         };
