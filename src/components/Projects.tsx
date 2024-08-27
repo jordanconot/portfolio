@@ -34,7 +34,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
     }
 
     const handlePlayVideo = () => {
-        const videoElement = document.getElementById('croissant-video') as HTMLVideoElement;
+        const videoElement = document.getElementById('video-croissant') as HTMLVideoElement;
         if (videoElement) {
             videoElement.muted = true;
             videoElement.play();
