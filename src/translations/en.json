@@ -49,14 +49,14 @@
                 "description": "Booking a table at a restaurant"
             },
             "card-5": {
-                "language": "Html | js | css",
-                "title": "Fisheye",
-                "description": "Photographer's platform"
+                "language": "React | NextJs | NodeJs | Tailwind | Mongodb",
+                "title": "La croissanterie",
+                "description": "Corporate Breakfast Management"
             },
             "card-6": {
-                "language": "Html | css",
-                "title": "Réservia",
-                "description": "Accommodation rental platform"
+                "language": "React | NestJs | Tailwind | Mongodb | Api Asana",
+                "title": "Client Portal",
+                "description": "Tracking the Progress of Client Projects"
             }
         },
         "skills": {

@@ -15,7 +15,9 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
     const [isVideoVisible, setVideoVisible] = useState(false);
+    const [isSecondVideoVisible, setSecondVideoVisible] = useState(false);
     const videoRef = useRef<HTMLVideoElement>(null);
+    const secondVideoRef = useRef<HTMLVideoElement>(null);
     const arrow = `~~>`;
 
     const [ref1, inView1] = useInView({ threshold: 0.1 });
@@ -35,31 +37,40 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
     }
 
     const handlePlayVideo = () => {
-        console.log('handlePlayVideo called');
         setVideoVisible(true);
 
         setTimeout(() => {
             const videoElement = videoRef.current;
             if (videoElement) {
-                console.log('Video element found');
                 videoElement.muted = true;
                 videoElement.play();
                 if (videoElement.requestFullscreen) {
                     videoElement.requestFullscreen();
-                } else {
-                    console.log('Fullscreen API not supported');
                 }
-            } else {
-                console.log('Video element not found');
             }
         }, 100);
+    };
+
+    const handlePlaySecondVideo = () => {
+        setSecondVideoVisible(true);
+
+        setTimeout(() => {
+            const secondVideoElement = secondVideoRef.current;
+            if (secondVideoElement) {
+                secondVideoElement.muted = true;
+                secondVideoElement.play();
+                if (secondVideoElement.requestFullscreen) {
+                    secondVideoElement.requestFullscreen();
+                }
+            }
+        }, 100); // Délai pour s'assurer que la deuxième vidéo est bien rendue
     };
 
     useEffect(() => {
         const handleFullscreenChange = () => {
             if (!document.fullscreenElement) {
-                console.log('Exiting fullscreen mode');
                 setVideoVisible(false);
+                setSecondVideoVisible(false);
             }
         };
 
@@ -191,7 +202,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
 
                 <div ref={ref6} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView6 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(6) }}>
                     <div className='h-60 flex relative'>
-                        <Image className='lg:h-60' src='/assets/img/reservia.png' alt='Projet Réservia' fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%" />
+                        <Image className='lg:h-60' src='/assets/img/portail-client.png' alt='Portail client' fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%" />
                     </div>
                     <div className='border-color-2 border flex p-2 border-x-0'>
                         <p className='text-color-2 uppercase pl-2'>{t('Main.card.card-6.language')}</p>
@@ -200,12 +211,18 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-6.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-6.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <Btn textKey='Main.btn-live' link='https://jordanconot.github.io/Conotjordan_P2_01072021' showArrow />
-                            <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/Conotjordan_P2_01072021' showArrow />
+                            <Btn textKey='Main.btn-live' onClick={handlePlaySecondVideo} showArrow />
                         </div>
                     </div>
                 </div>
 
+                {isSecondVideoVisible && (
+                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+                        <video ref={secondVideoRef} controls muted className="w-full h-full">
+                            <source src="/assets/video/portail-client-demo.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                )}
 
             </div>
             {isProjectsPage && (
