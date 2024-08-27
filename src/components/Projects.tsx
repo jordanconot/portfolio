@@ -262,23 +262,6 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                                 </div>
                             </div>
                         </div>
-
-                        {/* <div ref={ref9} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView9 ? 'animate__fadeInLeft' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(9) }}>
-                            <div className='w-full h-40 hidden'>
-                                <Image className='lg:w-full lg:h-80' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={333} height={160} />
-                            </div>
-                            <div className='border-color-2 border flex p-2 border-x-0'>
-                                <p className='text-color-2 uppercase pl-2'>{t('Page-projects.card-3.language')}</p>
-                            </div>
-                            <div className='flex flex-col gap-4 p-4'>
-                                <p className='uppercase text-color-3 text-2xl font-medium'>{t('Page-projects.card-3.title')}</p>
-                                <p className='text-color-2'>{t('Page-projects.card-3.description')}</p>
-                                <div className='flex flex-row gap-4'>
-                                    <Btn textKey='Main.btn-live' link='' showArrow />
-                                    <Btn textKey='Main.btn-github' link='' showArrow />
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
 
                     <p className='text-color-3 text-3xl font-medium mt-8'><span className='text-color-1 text-3xl'>#</span>{t('Page-projects.in-development')}</p>
@@ -294,25 +277,6 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                                 <p className='uppercase text-color-3 text-2xl font-medium'>{t('Page-projects.card-in-dev-1.title')}</p>
                                 <p className='text-color-2'>{t('Page-projects.card-in-dev-1.description')}</p>
                                 <div className='flex flex-row gap-4'>
-                                    {/* <Btn textKey='Main.btn-live' link='' showArrow />
-                                    <Btn textKey='Main.btn-github' link='' showArrow /> */}
-                                </div>
-                            </div>
-                        </div>
-
-                        <div ref={ref11} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView11 ? 'animate__fadeIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(11) }}>
-                            <div className='w-full h-40 hidden'>
-                                <Image className='lg:w-full lg:h-80' src='/assets/img/sport-see.jpg' alt='Projet sport see' width={333} height={160} />
-                            </div>
-                            <div className='border-color-2 border flex p-2 border-x-0'>
-                                <p className='text-color-2 uppercase pl-2'>{t('Page-projects.card-in-dev-2.language')}</p>
-                            </div>
-                            <div className='flex flex-col gap-4 p-4'>
-                                <p className='uppercase text-color-3 text-2xl font-medium'>{t('Page-projects.card-in-dev-2.title')}</p>
-                                <p className='text-color-2'>{t('Page-projects.card-in-dev-2.description')}</p>
-                                <div className='flex flex-row gap-4'>
-                                    {/* <Btn textKey='Main.btn-live' link='' showArrow />
-                                    <Btn textKey='Main.btn-github' link='' showArrow /> */}
                                 </div>
                             </div>
                         </div>

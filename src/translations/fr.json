@@ -124,9 +124,9 @@
             "description": "Amélioration du SEO et du score GT metrix"
         },
         "card-in-dev-1": {
-            "language": "React | js | nodejs | mongodb | scss",
-            "title": "La croissanterie",
-            "description": "Application de gestion de petit déjeuner d'entreprise"
+            "language": "React | Api Spotify | Tailwind",
+            "title": "Moodify",
+            "description": "Découverte musical personnalisée avec recommandations et analyse via Spotify"
         },
         "card-in-dev-2": {
             "language": "Nextjs | TypeScript | nestjs | mongodb | tailwind",
