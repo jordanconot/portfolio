@@ -144,7 +144,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-5.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-5.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <button  onClick={handlePlayVideo} />
+                        <Btn textKey='Main.btn-live' onClick={handlePlayVideo} showArrow />
                             {/* <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/fisheye' showArrow /> */}
                         </div>
                     </div>
