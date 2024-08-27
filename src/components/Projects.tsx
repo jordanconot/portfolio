@@ -3,7 +3,7 @@ import { LanguageContext } from '@/app/layout';
 import useTranslation from '@/hooks/useTranslation';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Btn from './utils/Btn';
 
@@ -44,6 +44,20 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
             }
         }
     };
+
+    useEffect(() => {
+        const handleFullscreenChange = () => {
+            if (!document.fullscreenElement) {
+                setVideoVisible(false);
+            }
+        };
+
+        document.addEventListener('fullscreenchange', handleFullscreenChange);
+
+        return () => {
+            document.removeEventListener('fullscreenchange', handleFullscreenChange);
+        };
+    }, []);
 
 
     return (
@@ -156,9 +170,13 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                     </div>
                 </div>
 
-                <video id="croissant-video" controls muted className={`mt-4 ${isVideoVisible ? 'block' : 'hidden'}`}>
-                    <source src='/assets/video/croissant-demo.mp4' type='video/mp4' />
-                </video>
+                {isVideoVisible && (
+                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+                        <video id="video-croissant" controls muted className="w-full h-full">
+                            <source src="/assets/video/croissant-demo.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                )}
 
                 <div ref={ref6} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView6 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(6) }}>
                     <div className='h-60 flex relative'>
