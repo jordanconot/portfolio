@@ -34,10 +34,14 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
     }
 
     const handlePlayVideo = () => {
-        const videoElement = document.getElementById('myVideo') as HTMLVideoElement;
+        const videoElement = document.getElementById('croissant-video') as HTMLVideoElement;
         if (videoElement) {
+            videoElement.muted = true;
             videoElement.play();
             setVideoVisible(true);
+            if (videoElement.requestFullscreen) {
+                videoElement.requestFullscreen();
+            }
         }
     };
 
@@ -152,7 +156,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                     </div>
                 </div>
 
-                <video id="myVideo" controls className={`mt-4 ${isVideoVisible ? 'block' : 'hidden'}`}>
+                <video id="croissant-video" controls muted className={`mt-4 ${isVideoVisible ? 'block' : 'hidden'}`}>
                     <source src='/assets/video/croissant-demo.mp4' type='video/mp4' />
                 </video>
 
