@@ -32,6 +32,14 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
         return `${index * 50}ms`;
     }
 
+    const handlePlayVideo = () => {
+        const videoElement = document.getElementById('myVideo') as HTMLVideoElement;
+        if (videoElement) {
+            videoElement.play();
+        }
+    };
+
+
     return (
 
         <section className={`flex flex-col gap-10 mt-16 lg:mt-36 `}>
@@ -127,7 +135,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
 
                 <div ref={ref5} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView5 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(5) }}>
                     <div className='h-60 flex relative'>
-                        <Image className='lg:h-60' src='/assets/img/fisheye.png' alt='Projet Fisheye' fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%" />
+                        <Image className='lg:h-60' src='/assets/img/croissant-demo.png' alt="C'est qui les croissants ?" fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%" />
                     </div>
                     <div className='border-color-2 border flex p-2 border-x-0'>
                         <p className='text-color-2 uppercase pl-2'>{t('Main.card.card-5.language')}</p>
@@ -136,11 +144,15 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-5.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-5.description')}</p>
                         <div className='flex flex-row gap-4'>
-                            <Btn textKey='Main.btn-live' link='https://fisheye-delta.vercel.app/' showArrow />
-                            <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/fisheye' showArrow />
+                            <button  onClick={handlePlayVideo} />
+                            {/* <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/fisheye' showArrow /> */}
                         </div>
                     </div>
                 </div>
+
+                <video id='myVideo' controls className='hidden'>
+                    <source src='/assets/video/croissant-demo.mp4' type='video/mp4' />
+                </video>
 
                 <div ref={ref6} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView6 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(6) }}>
                     <div className='h-60 flex relative'>
