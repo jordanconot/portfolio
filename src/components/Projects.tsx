@@ -3,7 +3,7 @@ import { LanguageContext } from '@/app/layout';
 import useTranslation from '@/hooks/useTranslation';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Btn from './utils/Btn';
 
@@ -14,6 +14,7 @@ interface ProjectsProps {
 const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
+    const [isVideoVisible, setVideoVisible] = useState(false);
     const arrow = `~~>`;
 
     const [ref1, inView1] = useInView({ threshold: 0.1 });
@@ -36,6 +37,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
         const videoElement = document.getElementById('myVideo') as HTMLVideoElement;
         if (videoElement) {
             videoElement.play();
+            setVideoVisible(true);
         }
     };
 
@@ -144,13 +146,13 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                         <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-5.title')}</p>
                         <p className='text-color-2'>{t('Main.card.card-5.description')}</p>
                         <div className='flex flex-row gap-4'>
-                        <Btn textKey='Main.btn-live' onClick={handlePlayVideo} showArrow />
+                            <Btn textKey='Main.btn-live' onClick={handlePlayVideo} showArrow />
                             {/* <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/fisheye' showArrow /> */}
                         </div>
                     </div>
                 </div>
 
-                <video id='myVideo' controls className='hidden'>
+                <video id="myVideo" controls className={`mt-4 ${isVideoVisible ? 'block' : 'hidden'}`}>
                     <source src='/assets/video/croissant-demo.mp4' type='video/mp4' />
                 </video>
 
