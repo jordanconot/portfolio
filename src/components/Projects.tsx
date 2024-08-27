@@ -3,7 +3,7 @@ import { LanguageContext } from '@/app/layout';
 import useTranslation from '@/hooks/useTranslation';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Btn from './utils/Btn';
 
@@ -15,6 +15,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
     const { lang, setLang } = useContext(LanguageContext);
     const { t } = useTranslation(lang);
     const [isVideoVisible, setVideoVisible] = useState(false);
+    const videoRef = useRef<HTMLVideoElement>(null);
     const arrow = `~~>`;
 
     const [ref1, inView1] = useInView({ threshold: 0.1 });
@@ -35,7 +36,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
 
     const handlePlayVideo = () => {
         console.log('handlePlayVideo called'); 
-        const videoElement = document.getElementById('video-croissant') as HTMLVideoElement;
+        const videoElement = videoRef.current;
         if (videoElement) {
             console.log('Video element found');
             videoElement.muted = true;
@@ -179,7 +180,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
 
                 {isVideoVisible && (
                     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-                        <video id="video-croissant" controls muted className="w-full h-full">
+                        <video ref={videoRef} controls muted className="w-full h-full">
                             <source src="/assets/video/croissant-demo.mp4" type="video/mp4" />
                         </video>
                     </div>
