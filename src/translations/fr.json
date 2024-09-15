@@ -44,9 +44,9 @@
                 "description": "Algorithme de recherche pour recette de cuisine"
             },
             "card-4": {
-                "language": "Html | css",
-                "title": "Oh my food",
-                "description": "Réserver une table au restaurant"
+                "language": "React | Api Spotify | Tailwind",
+                "title": "Moodify",
+                "description": "Découverte musical personnalisée avec recommandations et analyse via Spotify"
             },
             "card-5": {
                 "language": "React | NodeJs | Tailwind | Mongodb",

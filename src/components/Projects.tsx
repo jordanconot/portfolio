@@ -160,6 +160,23 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
 
                 <div ref={ref4} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView4 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(4) }}>
                     <div className='h-60 flex relative'>
+                        <Image className='lg:h-60' src='/assets/img/moodify.jpg' alt='Projet Moodify' fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%" />
+                    </div>
+                    <div className='border-color-2 border flex p-2 border-x-0'>
+                        <p className='text-color-2 uppercase pl-2'>{t('Main.card.card-4.language')}</p>
+                    </div>
+                    <div className='flex flex-col gap-4 p-4'>
+                        <p className='uppercase text-color-3 text-2xl font-medium'>{t('Main.card.card-4.title')}</p>
+                        <p className='text-color-2'>{t('Main.card.card-4.description')}</p>
+                        <div className='flex flex-row gap-4'>
+                            <Btn textKey='Main.btn-live' link='https://moodify-two.vercel.app/' showArrow />
+                            <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/moodify' showArrow />
+                        </div>
+                    </div>
+                </div>
+
+                {/* <div ref={ref4} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView4 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(4) }}>
+                    <div className='h-60 flex relative'>
                         <Image className='lg:h-60' src='/assets/img/oh-my-food.jpg' alt='Projet Oh my food' fill sizes="(max-width: 768px) 100%, (max-width: 1200px) 50%, 33%" />
                     </div>
                     <div className='border-color-2 border flex p-2 border-x-0'>
@@ -173,7 +190,7 @@ const Projects: React.FC<ProjectsProps> = ({ isProjectsPage }) => {
                             <Btn textKey='Main.btn-github' link='https://github.com/jordanconot/Conotjordan_P3_01082021' showArrow />
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div ref={ref5} className={`w-full border-color-2 border flex flex-col lg:w-[47%] xl:w-[30%] animate__animated ${inView5 ? 'animate__zoomIn' : 'opacity-0'}`} style={{ animationDelay: calculateDelay(5) }}>
                     <div className='h-60 flex relative'>
