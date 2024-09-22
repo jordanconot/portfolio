@@ -20,7 +20,7 @@
         "h2": "Je crée des sites web réactifs où la technologie rencontre la créativité",
         "btn-contact": "Contactez-moi !",
         "texte-img": "Travaille actuellement sur",
-        "texte-img-strong": "Moodify",
+        "texte-img-strong": "What's up",
         "citation": "Une grande puissance s'accompagne d'une grande facture d'électricité",
         "author": "- Dr Who"
     },
@@ -76,7 +76,7 @@
             "about": "À propos",
             "text-welcome": "Bonjour, je suis Jordan !",
             "text": "Je suis un développeur front-end, j'habite à Montpellier. Je peux développer des sites web réactifs à partir de zéro et les transformer en expériences web modernes et conviviales.",
-            "text-after": "Transformer ma créativité et mes connaissances en sites web est ma passion depuis plus d'un an. Je m'efforce toujours d'apprendre les dernières technologies et frameworks.",
+            "text-after": "Transformer ma créativité et mes connaissances en sites web est ma passion depuis plus de 2ans. Je m'efforce toujours d'apprendre les dernières technologies et frameworks.",
             "more": "Curieux(se) ?"
         },
         "contact": {
@@ -93,7 +93,7 @@
     },
     "Footer": {
         "name": "Jordan",
-        "text-top": "Web designer & front-end développeur",
+        "text-top": "Développeur d'applications & front-end développeur",
         "media": "Média",
         "credit": "Design Credit ~ Jordan from Figma community",
         "copyright": "© Copyright 2024. Website by Jordan.C"
